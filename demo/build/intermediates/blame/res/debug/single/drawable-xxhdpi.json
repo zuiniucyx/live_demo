@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable-xxhdpi/pl_red.png",
+        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/drawable-xxhdpi/pl_red.png"
+    },
+    {
+        "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable-xxhdpi/pl_yellow.png",
+        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/drawable-xxhdpi/pl_yellow.png"
+    },
+    {
+        "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_stat_notify_msg.png",
+        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/drawable-xxhdpi/ic_stat_notify_msg.png"
+    },
+    {
+        "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_logo.png",
+        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/drawable-xxhdpi/ic_logo.png"
+    },
+    {
+        "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable-xxhdpi/pl_blue.png",
+        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/drawable-xxhdpi/pl_blue.png"
+    }
+]

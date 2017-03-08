@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable-mdpi/ic_logo.png",
+        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/drawable-mdpi/ic_logo.png"
+    },
+    {
+        "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable-mdpi/ic_stat_notify_msg.png",
+        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/drawable-mdpi/ic_stat_notify_msg.png"
+    }
+]

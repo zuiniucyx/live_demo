@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/live_start_bg"/>
+
+    <Button
+        android:id="@+id/start_live_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/g_white_btn_selector"
+        android:layout_gravity="center"
+        android:textColor="@color/color_blue_238efa"
+        android:text="@string/live_start"/>
+</FrameLayout>
