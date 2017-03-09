@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Mar 09 11:26:04 CST 2017
+#Thu Mar 09 11:48:09 CST 2017
 20.base=/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/resources-debug.ap_
 143.base=/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/assets/debug
 493.base=/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/resources-debug.ap_

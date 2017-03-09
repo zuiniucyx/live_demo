@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
@@ -19,8 +18,6 @@ import com.netease.neliveplayer.NELivePlayer;
 import com.netease.nim.chatroom.demo.DemoCache;
 import com.netease.nim.chatroom.demo.R;
 import com.netease.nim.chatroom.demo.base.util.log.LogUtil;
-import com.netease.nim.chatroom.demo.entertainment.adapter.GiftAdapter;
-import com.netease.nim.chatroom.demo.entertainment.constant.GiftType;
 import com.netease.nim.chatroom.demo.entertainment.constant.LiveType;
 import com.netease.nim.chatroom.demo.entertainment.constant.MicApplyEnum;
 import com.netease.nim.chatroom.demo.entertainment.constant.MicStateEnum;
@@ -31,7 +28,6 @@ import com.netease.nim.chatroom.demo.entertainment.helper.MicHelper;
 import com.netease.nim.chatroom.demo.entertainment.helper.SimpleCallback;
 import com.netease.nim.chatroom.demo.entertainment.http.ChatRoomHttpClient;
 import com.netease.nim.chatroom.demo.entertainment.module.ConnectedAttachment;
-import com.netease.nim.chatroom.demo.entertainment.module.GiftAttachment;
 import com.netease.nim.chatroom.demo.entertainment.module.LikeAttachment;
 import com.netease.nim.chatroom.demo.im.config.UserPreferences;
 import com.netease.nim.chatroom.demo.im.ui.dialog.EasyAlertDialogHelper;
@@ -85,7 +81,7 @@ public class AudienceActivity extends LivePlayerBaseActivity implements VideoPla
     private AVChatVideoRender videoRender;
     private NEVideoView videoView;
     private View closeBtn;
-    private ImageButton likeBtn;
+//    private ImageButton likeBtn;
     private ViewGroup liveFinishLayout;
     private View liveFinishBtn;
     private TextView finishTipText;
@@ -95,7 +91,7 @@ public class AudienceActivity extends LivePlayerBaseActivity implements VideoPla
     private ImageButton switchBtn;
 
     private ViewGroup roomOwnerLayout; // master名称布局
-    private ViewGroup inputLayout; // 输入框布局
+//    private ViewGroup inputLayout; // 输入框布局
     /**
      * 互动
      **/
@@ -294,17 +290,17 @@ public class AudienceActivity extends LivePlayerBaseActivity implements VideoPla
         closeBtn = findView(R.id.close_btn);
         roomOwnerLayout = findView(R.id.room_owner_layout);
         controlLayout = findView(R.id.control_layout);
-        inputLayout = findView(R.id.messageActivityBottomLayout);
+//        inputLayout = findView(R.id.messageActivityBottomLayout);
         interactionBtn = findView(R.id.interaction_btn);
 //        interactionBtn.setVisibility(View.GONE);
-        likeBtn = findView(R.id.like_btn);
+//        likeBtn = findView(R.id.like_btn);
         switchBtn = findView(R.id.switch_btn);
         beautyBtn = findView(R.id.beauty_btn);
 
         closeBtn.setOnClickListener(buttonClickListener);
         interactionBtn.setOnClickListener(buttonClickListener);
-        giftBtn.setOnClickListener(buttonClickListener);
-        likeBtn.setOnClickListener(buttonClickListener);
+//        giftBtn.setOnClickListener(buttonClickListener);
+//        likeBtn.setOnClickListener(buttonClickListener);
         switchBtn.setOnClickListener(buttonClickListener);
         beautyBtn.setOnClickListener(buttonClickListener);
 
@@ -338,34 +334,34 @@ public class AudienceActivity extends LivePlayerBaseActivity implements VideoPla
         preparedText = findView(R.id.prepared_text);
     }
 
-    // 初始化礼物布局
-    protected void findGiftLayout() {
-        super.findGiftLayout();
-        sendGiftBtn = findView(R.id.send_gift_btn);
-        sendGiftBtn.setOnClickListener(buttonClickListener);
-
-        adapter = new GiftAdapter(this);
-        giftView.setAdapter(adapter);
-
-        giftLayout.setOnClickListener(buttonClickListener);
-        giftView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                giftPosition = position;
-            }
-        });
-
-    }
+//    // 初始化礼物布局
+//    protected void findGiftLayout() {
+//        super.findGiftLayout();
+//        sendGiftBtn = findView(R.id.send_gift_btn);
+//        sendGiftBtn.setOnClickListener(buttonClickListener);
+//
+//        adapter = new GiftAdapter(this);
+//        giftView.setAdapter(adapter);
+//
+//        giftLayout.setOnClickListener(buttonClickListener);
+//        giftView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//                giftPosition = position;
+//            }
+//        });
+//
+//    }
 
     protected void updateRoomUI(boolean isHide) {
         if (isHide) {
             controlLayout.setVisibility(View.GONE);
             roomOwnerLayout.setVisibility(View.GONE);
-            inputLayout.setVisibility(View.GONE);
+//            inputLayout.setVisibility(View.GONE);
         } else {
             controlLayout.setVisibility(View.VISIBLE);
             roomOwnerLayout.setVisibility(View.VISIBLE);
-            inputLayout.setVisibility(View.VISIBLE);
+//            inputLayout.setVisibility(View.VISIBLE);
         }
     }
 
@@ -402,26 +398,26 @@ public class AudienceActivity extends LivePlayerBaseActivity implements VideoPla
                 case R.id.interaction_btn:
                     showInteractionLayout();
                     break;
-                case R.id.gift_btn:
-                    showGiftLayout();
-                    break;
-                case R.id.like_btn:
-                    periscopeLayout.addHeart();
-                    sendLike();
-                    break;
+//                case R.id.gift_btn:
+//                    showGiftLayout();
+//                    break;
+//                case R.id.like_btn:
+//                    periscopeLayout.addHeart();
+//                    sendLike();
+//                    break;
                 case R.id.switch_btn:
                     AVChatManager.getInstance().switchCamera();
                     break;
                 case R.id.beauty_btn:
                     openCloseBeauty();
                     break;
-                case R.id.gift_layout:
-                    giftLayout.setVisibility(View.GONE);
-                    giftPosition = -1;
-                    break;
-                case R.id.send_gift_btn:
-                    sendGift();
-                    break;
+//                case R.id.gift_layout:
+//                    giftLayout.setVisibility(View.GONE);
+//                    giftPosition = -1;
+//                    break;
+//                case R.id.send_gift_btn:
+//                    sendGift();
+//                    break;
                 case R.id.audience_interaction_layout:
                     interationLayout.setVisibility(View.GONE);
                     break;
@@ -474,25 +470,25 @@ public class AudienceActivity extends LivePlayerBaseActivity implements VideoPla
      ******************************/
 
     // 显示礼物列表
-    private void showGiftLayout() {
-        giftLayout.setVisibility(View.VISIBLE);
-        inputPanel.collapse(true);
-    }
+//    private void showGiftLayout() {
+//        giftLayout.setVisibility(View.VISIBLE);
+//        inputPanel.collapse(true);
+//    }
 
     // 发送礼物
-    private void sendGift() {
-        if (giftPosition == -1) {
-            Toast.makeText(AudienceActivity.this, "请选择礼物", Toast.LENGTH_SHORT).show();
-            return;
-        }
-        giftLayout.setVisibility(View.GONE);
-        GiftAttachment attachment = new GiftAttachment(GiftType.typeOfValue(giftPosition), 1);
-        ChatRoomMessage message = ChatRoomMessageBuilder.createChatRoomCustomMessage(roomId, attachment);
-        setMemberType(message);
-        NIMClient.getService(ChatRoomService.class).sendMessage(message, false);
-        giftAnimation.showGiftAnimation(message);
-        giftPosition = -1; // 发送完毕，置空
-    }
+//    private void sendGift() {
+//        if (giftPosition == -1) {
+//            Toast.makeText(AudienceActivity.this, "请选择礼物", Toast.LENGTH_SHORT).show();
+//            return;
+//        }
+////        giftLayout.setVisibility(View.GONE);
+//        GiftAttachment attachment = new GiftAttachment(GiftType.typeOfValue(giftPosition), 1);
+//        ChatRoomMessage message = ChatRoomMessageBuilder.createChatRoomCustomMessage(roomId, attachment);
+//        setMemberType(message);
+//        NIMClient.getService(ChatRoomService.class).sendMessage(message, false);
+//        giftAnimation.showGiftAnimation(message);
+//        giftPosition = -1; // 发送完毕，置空
+//    }
 
     private void setMemberType(ChatRoomMessage message) {
         Map<String, Object> ext = new HashMap<>();
@@ -924,8 +920,8 @@ public class AudienceActivity extends LivePlayerBaseActivity implements VideoPla
         switchBtn.setVisibility(style == AVChatType.VIDEO.getValue() ? View.VISIBLE : View.GONE);
         beautyBtn.setVisibility(style == AVChatType.VIDEO.getValue() ? View.VISIBLE : View.GONE );
         interactionBtn.setVisibility(View.GONE);
-        inputPanel.hideInputPanel();
-        inputPanel.collapse(true);
+//        inputPanel.hideInputPanel();
+//        inputPanel.collapse(true);
         controlLayout.setVisibility(View.VISIBLE);
         RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(
                 ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
@@ -984,7 +980,7 @@ public class AudienceActivity extends LivePlayerBaseActivity implements VideoPla
             interactionBtn.setVisibility(View.VISIBLE);
             switchBtn.setVisibility(View.GONE);
             beautyBtn.setVisibility(View.GONE);
-            inputPanel.showInputPanel();
+//            inputPanel.showInputPanel();
             RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(
                     ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
             lp.addRule(RelativeLayout.ABOVE, R.id.messageActivityBottomLayout);//设置在输入框上方
@@ -1242,7 +1238,7 @@ public class AudienceActivity extends LivePlayerBaseActivity implements VideoPla
     private void showFinishLayout() {
         liveFinishLayout.setVisibility(View.VISIBLE);
         finishTipText.setText(R.string.live_finish);
-        inputPanel.collapse(true);
+//        inputPanel.collapse(true);
     }
 
 }

@@ -1,31 +1,24 @@
 package com.netease.nim.chatroom.demo.entertainment.activity;
 
 import android.Manifest;
-import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.text.style.ImageSpan;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.EditText;
-import android.widget.GridView;
 import android.widget.ImageButton;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.netease.nim.chatroom.demo.DemoCache;
 import com.netease.nim.chatroom.demo.R;
 import com.netease.nim.chatroom.demo.base.ui.TActivity;
 import com.netease.nim.chatroom.demo.base.util.log.LogUtil;
 import com.netease.nim.chatroom.demo.entertainment.adapter.GiftAdapter;
-import com.netease.nim.chatroom.demo.entertainment.constant.GiftType;
 import com.netease.nim.chatroom.demo.entertainment.constant.LiveType;
 import com.netease.nim.chatroom.demo.entertainment.constant.PushLinkConstant;
 import com.netease.nim.chatroom.demo.entertainment.constant.PushMicNotificationType;
@@ -34,16 +27,8 @@ import com.netease.nim.chatroom.demo.entertainment.helper.GiftAnimation;
 import com.netease.nim.chatroom.demo.entertainment.module.ChatRoomMsgListPanel;
 import com.netease.nim.chatroom.demo.entertainment.module.ConnectedAttachment;
 import com.netease.nim.chatroom.demo.entertainment.module.DisconnectAttachment;
-import com.netease.nim.chatroom.demo.entertainment.module.GiftAttachment;
-import com.netease.nim.chatroom.demo.entertainment.module.LikeAttachment;
-import com.netease.nim.chatroom.demo.im.session.Container;
-import com.netease.nim.chatroom.demo.im.session.ModuleProxy;
 import com.netease.nim.chatroom.demo.im.session.actions.BaseAction;
-import com.netease.nim.chatroom.demo.im.session.emoji.MoonUtil;
-import com.netease.nim.chatroom.demo.im.session.input.InputConfig;
-import com.netease.nim.chatroom.demo.im.session.input.InputPanel;
 import com.netease.nim.chatroom.demo.im.ui.dialog.DialogMaker;
-import com.netease.nim.chatroom.demo.im.ui.periscope.PeriscopeLayout;
 import com.netease.nim.chatroom.demo.permission.MPermission;
 import com.netease.nimlib.sdk.AbortableFuture;
 import com.netease.nimlib.sdk.NIMClient;
@@ -69,13 +54,10 @@ import com.netease.nimlib.sdk.chatroom.model.EnterChatRoomData;
 import com.netease.nimlib.sdk.chatroom.model.EnterChatRoomResultData;
 import com.netease.nimlib.sdk.msg.MsgServiceObserve;
 import com.netease.nimlib.sdk.msg.constant.NotificationType;
-import com.netease.nimlib.sdk.msg.constant.SessionTypeEnum;
 import com.netease.nimlib.sdk.msg.model.CustomNotification;
-import com.netease.nimlib.sdk.msg.model.IMMessage;
 import com.netease.nrtc.effect.video.GPUImage;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Timer;
@@ -85,7 +67,7 @@ import java.util.TimerTask;
  * 直播端和观众端的基类
  * Created by hzxuwen on 2016/4/5.
  */
-public abstract class LivePlayerBaseActivity extends TActivity implements ModuleProxy, AVChatStateObserver {
+public abstract class LivePlayerBaseActivity extends TActivity implements AVChatStateObserver {
     private static final String TAG = LivePlayerBaseActivity.class.getSimpleName();
 
     protected final int LIVE_PERMISSION_REQUEST_CODE = 100;
@@ -108,7 +90,7 @@ public abstract class LivePlayerBaseActivity extends TActivity implements Module
     protected boolean isCreator; // 是否是主播
 
     // modules
-    protected InputPanel inputPanel;
+//    protected InputPanel inputPanel;
     protected ChatRoomMsgListPanel messageListPanel;
     private EditText messageEditText;
 
@@ -116,12 +98,12 @@ public abstract class LivePlayerBaseActivity extends TActivity implements Module
     protected ViewGroup rootView;
     protected TextView masterNameText;
     private TextView onlineCountText; // 在线人数view
-    protected GridView giftView; // 礼物列表
-    private RelativeLayout giftAnimationViewDown; // 礼物动画布局1
-    private RelativeLayout giftAnimationViewUp; // 礼物动画布局2
-    protected PeriscopeLayout periscopeLayout; // 点赞爱心布局
-    protected ImageButton giftBtn; // 礼物按钮
-    protected ViewGroup giftLayout; // 礼物布局
+//    protected GridView giftView; // 礼物列表
+//    private RelativeLayout giftAnimationViewDown; // 礼物动画布局1
+//    private RelativeLayout giftAnimationViewUp; // 礼物动画布局2
+//    protected PeriscopeLayout periscopeLayout; // 点赞爱心布局
+//    protected ImageButton giftBtn; // 礼物按钮
+//    protected ViewGroup giftLayout; // 礼物布局
     protected ViewGroup controlLayout; // 右下角几个image button布局
     protected TextView interactionBtn; // 互动按钮
     protected TextView fakeListText; // 占坑用的view，message listview可以浮动上下
@@ -198,14 +180,14 @@ public abstract class LivePlayerBaseActivity extends TActivity implements Module
         }
     }
 
-    @Override
-    public void onBackPressed() {
-        if (inputPanel != null && inputPanel.collapse(true)) {
-        }
-
-        if (messageListPanel != null && messageListPanel.onBackPressed()) {
-        }
-    }
+//    @Override
+//    public void onBackPressed() {
+////        if (inputPanel != null && inputPanel.collapse(true)) {
+////        }
+//
+//        if (messageListPanel != null && messageListPanel.onBackPressed()) {
+//        }
+//    }
 
     @Override
     protected void onDestroy() {
@@ -255,15 +237,7 @@ public abstract class LivePlayerBaseActivity extends TActivity implements Module
             }
 
             for (ChatRoomMessage message : messages) {
-                if (message != null && message.getAttachment() instanceof GiftAttachment) {
-                    // 收到礼物消息
-                    GiftType type = ((GiftAttachment) message.getAttachment()).getGiftType();
-                    updateGiftList(type);
-                    giftAnimation.showGiftAnimation(message);
-                } else if (message != null && message.getAttachment() instanceof LikeAttachment) {
-                    // 收到点赞爱心
-                    periscopeLayout.addHeart();
-                } else if (message != null && message.getAttachment() instanceof ChatRoomNotificationAttachment) {
+               if (message != null && message.getAttachment() instanceof ChatRoomNotificationAttachment) {
                     // 通知类消息
                     ChatRoomNotificationAttachment attachment = (ChatRoomNotificationAttachment) message.getAttachment();
                     if (attachment.getType() == NotificationType.ChatRoomMemberIn) {
@@ -402,57 +376,57 @@ public abstract class LivePlayerBaseActivity extends TActivity implements Module
         onlineCountText = findView(R.id.online_count_text);
 
         interactionBtn = findView(R.id.interaction_btn);
-        giftBtn = findView(R.id.gift_btn);
-        // 礼物列表
-        findGiftLayout();
-        // 点赞的爱心布局
-        periscopeLayout = (PeriscopeLayout) findViewById(R.id.periscope);
+//        giftBtn = findView(R.id.gift_btn);
+//        // 礼物列表
+//        findGiftLayout();
+//        // 点赞的爱心布局
+//        periscopeLayout = (PeriscopeLayout) findViewById(R.id.periscope);
 
-        Container container = new Container(this, roomId, SessionTypeEnum.ChatRoom, this);
-        View view = findViewById(getLayoutId());
-        if (messageListPanel == null) {
-            messageListPanel = new ChatRoomMsgListPanel(container, view);
-        }
-        InputConfig inputConfig = new InputConfig();
-        inputConfig.isTextAudioSwitchShow = false;
-        inputConfig.isMoreFunctionShow = false;
-        inputConfig.isEmojiButtonShow = false;
-        if (inputPanel == null) {
-            inputPanel = new InputPanel(container, view, getActionList(), inputConfig);
-        } else {
-            inputPanel.reload(container, inputConfig);
-        }
-        messageEditText = findView(R.id.editTextMessage);
-        messageEditText.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                    inputPanel.collapse(true);
-                    startInputActivity();
-                }
-                return false;
-            }
-        });
+//        Container container = new Container(this, roomId, SessionTypeEnum.ChatRoom, this);
+//        View view = findViewById(getLayoutId());
+//        if (messageListPanel == null) {
+//            messageListPanel = new ChatRoomMsgListPanel(container, view);
+//        }
+//        InputConfig inputConfig = new InputConfig();
+//        inputConfig.isTextAudioSwitchShow = false;
+//        inputConfig.isMoreFunctionShow = false;
+//        inputConfig.isEmojiButtonShow = false;
+//        if (inputPanel == null) {
+//            inputPanel = new InputPanel(container, view, getActionList(), inputConfig);
+//        } else {
+//            inputPanel.reload(container, inputConfig);
+//        }
+//        messageEditText = findView(R.id.editTextMessage);
+//        messageEditText.setOnTouchListener(new View.OnTouchListener() {
+//            @Override
+//            public boolean onTouch(View v, MotionEvent event) {
+//                if (event.getAction() == MotionEvent.ACTION_DOWN) {
+////                    inputPanel.collapse(true);
+//                    startInputActivity();
+//                }
+//                return false;
+//            }
+//        });
 
         // 互动连麦布局
         findInteractionViews();
     }
 
-    // 初始化礼物布局
-    protected void findGiftLayout() {
-        giftLayout = findView(R.id.gift_layout);
-        giftView = findView(R.id.gift_grid_view);
+//    // 初始化礼物布局
+//    protected void findGiftLayout() {
+//        giftLayout = findView(R.id.gift_layout);
+//        giftView = findView(R.id.gift_grid_view);
+//
+//        giftAnimationViewDown = findView(R.id.gift_animation_view);
+//        giftAnimationViewUp = findView(R.id.gift_animation_view_up);
+//
+//        giftAnimation = new GiftAnimation(giftAnimationViewDown, giftAnimationViewUp);
+//    }
 
-        giftAnimationViewDown = findView(R.id.gift_animation_view);
-        giftAnimationViewUp = findView(R.id.gift_animation_view_up);
-
-        giftAnimation = new GiftAnimation(giftAnimationViewDown, giftAnimationViewUp);
-    }
-
-    // 更新礼物列表，由子类定义
-    protected void updateGiftList(GiftType type) {
-
-    }
+//    // 更新礼物列表，由子类定义
+//    protected void updateGiftList(GiftType type) {
+//
+//    }
 
     // 互动连麦布局
     private void findInteractionViews() {
@@ -654,72 +628,72 @@ public abstract class LivePlayerBaseActivity extends TActivity implements Module
      * Module proxy
      ***************************/
 
-    @Override
-    public boolean sendMessage(IMMessage msg) {
-        ChatRoomMessage message = (ChatRoomMessage) msg;
+//    @Override
+//    public boolean sendMessage(IMMessage msg) {
+//        ChatRoomMessage message = (ChatRoomMessage) msg;
+//
+//        Map<String, Object> ext = new HashMap<>();
+//        ChatRoomMember chatRoomMember = ChatRoomMemberCache.getInstance().getChatRoomMember(roomId, DemoCache.getAccount());
+//        if (chatRoomMember != null && chatRoomMember.getMemberType() != null) {
+//            ext.put("type", chatRoomMember.getMemberType().getValue());
+//            message.setRemoteExtension(ext);
+//        }
+//
+//        NIMClient.getService(ChatRoomService.class).sendMessage(message, false)
+//                .setCallback(new RequestCallback<Void>() {
+//                    @Override
+//                    public void onSuccess(Void param) {
+//                    }
+//
+//                    @Override
+//                    public void onFailed(int code) {
+//                        if (code == ResponseCode.RES_CHATROOM_MUTED) {
+//                            Toast.makeText(DemoCache.getContext(), "用户被禁言", Toast.LENGTH_SHORT).show();
+//                        } else {
+//                            Toast.makeText(DemoCache.getContext(), "消息发送失败：code:" + code, Toast.LENGTH_SHORT).show();
+//                        }
+//                    }
+//
+//                    @Override
+//                    public void onException(Throwable exception) {
+//                        Toast.makeText(DemoCache.getContext(), "消息发送失败！", Toast.LENGTH_SHORT).show();
+//                    }
+//                });
+//        messageListPanel.onMsgSend(msg);
+//        return true;
+//    }
 
-        Map<String, Object> ext = new HashMap<>();
-        ChatRoomMember chatRoomMember = ChatRoomMemberCache.getInstance().getChatRoomMember(roomId, DemoCache.getAccount());
-        if (chatRoomMember != null && chatRoomMember.getMemberType() != null) {
-            ext.put("type", chatRoomMember.getMemberType().getValue());
-            message.setRemoteExtension(ext);
-        }
-
-        NIMClient.getService(ChatRoomService.class).sendMessage(message, false)
-                .setCallback(new RequestCallback<Void>() {
-                    @Override
-                    public void onSuccess(Void param) {
-                    }
-
-                    @Override
-                    public void onFailed(int code) {
-                        if (code == ResponseCode.RES_CHATROOM_MUTED) {
-                            Toast.makeText(DemoCache.getContext(), "用户被禁言", Toast.LENGTH_SHORT).show();
-                        } else {
-                            Toast.makeText(DemoCache.getContext(), "消息发送失败：code:" + code, Toast.LENGTH_SHORT).show();
-                        }
-                    }
-
-                    @Override
-                    public void onException(Throwable exception) {
-                        Toast.makeText(DemoCache.getContext(), "消息发送失败！", Toast.LENGTH_SHORT).show();
-                    }
-                });
-        messageListPanel.onMsgSend(msg);
-        return true;
-    }
-
-    @Override
-    public void onInputPanelExpand() {
-        controlLayout.setVisibility(View.GONE);
-        if (fakeListText != null) {
-            fakeListText.setVisibility(View.GONE);
-        }
-        if (isOnMic && roomInfo.getCreator().equals(DemoCache.getAccount())) {
-            connectionViewLayout.setVisibility(View.GONE);
-            bypassVideoRender.setVisibility(View.GONE);
-            bypassVideoRender.setZOrderMediaOverlay(false);
-        }
-    }
-
-    @Override
-    public void shouldCollapseInputPanel() {
-        inputPanel.collapse(false);
-        controlLayout.setVisibility(View.VISIBLE);
-        if (fakeListText != null) {
-            fakeListText.setVisibility(View.VISIBLE);
-        }
-        if (isOnMic && roomInfo.getCreator().equals(DemoCache.getAccount())) {
-            connectionViewLayout.setVisibility(View.VISIBLE);
-            bypassVideoRender.setVisibility(View.VISIBLE);
-            bypassVideoRender.setZOrderMediaOverlay(true);
-        }
-    }
-
-    @Override
-    public boolean isLongClickEnabled() {
-        return false;
-    }
+//    @Override
+//    public void onInputPanelExpand() {
+//        controlLayout.setVisibility(View.GONE);
+//        if (fakeListText != null) {
+//            fakeListText.setVisibility(View.GONE);
+//        }
+//        if (isOnMic && roomInfo.getCreator().equals(DemoCache.getAccount())) {
+//            connectionViewLayout.setVisibility(View.GONE);
+//            bypassVideoRender.setVisibility(View.GONE);
+//            bypassVideoRender.setZOrderMediaOverlay(false);
+//        }
+//    }
+//
+//    @Override
+//    public void shouldCollapseInputPanel() {
+//        inputPanel.collapse(false);
+//        controlLayout.setVisibility(View.VISIBLE);
+//        if (fakeListText != null) {
+//            fakeListText.setVisibility(View.VISIBLE);
+//        }
+//        if (isOnMic && roomInfo.getCreator().equals(DemoCache.getAccount())) {
+//            connectionViewLayout.setVisibility(View.VISIBLE);
+//            bypassVideoRender.setVisibility(View.VISIBLE);
+//            bypassVideoRender.setZOrderMediaOverlay(true);
+//        }
+//    }
+//
+//    @Override
+//    public boolean isLongClickEnabled() {
+//        return false;
+//    }
 
     // 操作面板集合
     protected List<BaseAction> getActionList() {
@@ -833,39 +807,39 @@ public abstract class LivePlayerBaseActivity extends TActivity implements Module
     /**
      * ***************************** 部分机型键盘弹出会造成布局挤压的解决方案 ***********************************
      */
-    private InputConfig inputConfig = new InputConfig(false, false, false);
-
-    private void startInputActivity() {
-        InputActivity.startActivityForResult(this, messageEditText.getText().toString(),
-                inputConfig, new InputActivity.InputActivityProxy() {
-                    @Override
-                    public void onSendMessage(String text) {
-                        inputPanel.onTextMessageSendButtonPressed(text);
-                    }
-                });
-    }
-
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-
-        if (resultCode == Activity.RESULT_OK && requestCode == InputActivity.REQ_CODE) {
-            // 设置EditText显示的内容
-            String text = data.getStringExtra(InputActivity.EXTRA_TEXT);
-            MoonUtil.identifyFaceExpression(DemoCache.getContext(), messageEditText, text, ImageSpan.ALIGN_BOTTOM);
-            messageEditText.setSelection(text.length());
-
-            // 根据mode显示表情布局或者键盘布局
-            int mode = data.getIntExtra(InputActivity.EXTRA_MODE, InputActivity.MODE_KEYBOARD_COLLAPSE);
-            if (mode == InputActivity.MODE_SHOW_EMOJI) {
-                inputPanel.toggleEmojiLayout();
-            } else if (mode == InputActivity.MODE_SHOW_MORE_FUNC) {
-                inputPanel.toggleActionPanelLayout();
-            }
-
-            //inputPanel.show();
-        }
-    }
+//    private InputConfig inputConfig = new InputConfig(false, false, false);
+//
+//    private void startInputActivity() {
+//        InputActivity.startActivityForResult(this, messageEditText.getText().toString(),
+//                inputConfig, new InputActivity.InputActivityProxy() {
+//                    @Override
+//                    public void onSendMessage(String text) {
+//                        inputPanel.onTextMessageSendButtonPressed(text);
+//                    }
+//                });
+//    }
+//
+//    @Override
+//    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+//        super.onActivityResult(requestCode, resultCode, data);
+//
+//        if (resultCode == Activity.RESULT_OK && requestCode == InputActivity.REQ_CODE) {
+//            // 设置EditText显示的内容
+//            String text = data.getStringExtra(InputActivity.EXTRA_TEXT);
+//            MoonUtil.identifyFaceExpression(DemoCache.getContext(), messageEditText, text, ImageSpan.ALIGN_BOTTOM);
+//            messageEditText.setSelection(text.length());
+//
+//            // 根据mode显示表情布局或者键盘布局
+//            int mode = data.getIntExtra(InputActivity.EXTRA_MODE, InputActivity.MODE_KEYBOARD_COLLAPSE);
+//            if (mode == InputActivity.MODE_SHOW_EMOJI) {
+//                inputPanel.toggleEmojiLayout();
+//            } else if (mode == InputActivity.MODE_SHOW_MORE_FUNC) {
+//                inputPanel.toggleActionPanelLayout();
+//            }
+//
+//            //inputPanel.show();
+//        }
+//    }
 
     /************************
      * 美颜

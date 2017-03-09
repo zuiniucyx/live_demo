@@ -5,22 +5,22 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="235071282253050"
+    timestamp="238816027006354"
     token="-8348537167506654118"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="41415" />
+        duration="5533" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="1940" />
+        duration="66" />
     <task
         name="verifier"
-        duration="14" />
+        duration="2" />
 
     <artifact
         location="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
@@ -33,14 +33,14 @@
         type="DEX" />
 
     <build
-        timestamp="234399495293855"
+        timestamp="238381984498374"
         verifier="MANIFEST_FILE_CHANGE" >
         <artifact
             location="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/outputs/apk/demo-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="235071282253050"
+        timestamp="238816027006354"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/instant-run-resources/resources-debug.ir.ap_"

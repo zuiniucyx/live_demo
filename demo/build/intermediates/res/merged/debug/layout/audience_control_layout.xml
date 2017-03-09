@@ -3,8 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_above="@id/messageActivityBottomLayout"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="30dp"
     tools:showIn="@layout/audience_activity">
+    <!--android:layout_above="@id/messageActivityBottomLayout"-->
+
 
     <ImageButton
         android:id="@+id/switch_btn"
@@ -34,21 +37,21 @@
         android:layout_toRightOf="@id/beauty_btn"
         android:background="@drawable/ic_interaction_normal" />
 
-    <ImageButton
-        android:id="@+id/gift_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_toRightOf="@id/interaction_btn"
-        android:background="@drawable/gift_icon_selector" />
+    <!--<ImageButton-->
+        <!--android:id="@+id/gift_btn"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_toRightOf="@id/interaction_btn"-->
+        <!--android:background="@drawable/gift_icon_selector" />-->
 
-    <ImageButton
-        android:id="@+id/like_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="10dp"
-        android:layout_marginRight="15dp"
-        android:background="@drawable/like_icon_selector" />
+    <!--<ImageButton-->
+        <!--android:id="@+id/like_btn"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:layout_marginRight="15dp"-->
+        <!--android:background="@drawable/like_icon_selector" />-->
 </RelativeLayout>

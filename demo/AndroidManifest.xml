@@ -98,7 +98,7 @@
 
         <activity
             android:name=".entertainment.activity.LiveModeChooseActivity"
-            android:screenOrientation="landscape"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity

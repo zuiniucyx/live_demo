@@ -23,7 +23,6 @@ import com.alibaba.fastjson.JSONObject;
 import com.netease.nim.chatroom.demo.DemoCache;
 import com.netease.nim.chatroom.demo.R;
 import com.netease.nim.chatroom.demo.base.util.log.LogUtil;
-import com.netease.nim.chatroom.demo.entertainment.adapter.GiftAdapter;
 import com.netease.nim.chatroom.demo.entertainment.adapter.InteractionAdapter;
 import com.netease.nim.chatroom.demo.entertainment.constant.GiftConstant;
 import com.netease.nim.chatroom.demo.entertainment.constant.GiftType;
@@ -402,12 +401,12 @@ public class LiveActivity extends LivePlayerBaseActivity implements InteractionA
         netOperateText = findView(R.id.network_operation_tip);
     }
 
-    // 初始化礼物布局
-    protected void findGiftLayout() {
-        super.findGiftLayout();
-        adapter = new GiftAdapter(giftList, this);
-        giftView.setAdapter(adapter);
-    }
+//    // 初始化礼物布局
+//    protected void findGiftLayout() {
+//        super.findGiftLayout();
+//        adapter = new GiftAdapter(giftList, this);
+//        giftView.setAdapter(adapter);
+//    }
 
     protected void findMusicLayout() {
         backgroundMusicLayout = findView(R.id.background_music_layout);
@@ -612,8 +611,8 @@ public class LiveActivity extends LivePlayerBaseActivity implements InteractionA
         beautyBtn.setOnClickListener(buttonClickListener);
         interactionBtn.setOnClickListener(buttonClickListener);
         interactionLayout.setOnClickListener(buttonClickListener);
-        giftBtn.setOnClickListener(buttonClickListener);
-        giftLayout.setOnClickListener(buttonClickListener);
+//        giftBtn.setOnClickListener(buttonClickListener);
+//        giftLayout.setOnClickListener(buttonClickListener);
         musicBtn.setOnClickListener(buttonClickListener);
         musicBlankView.setOnClickListener(buttonClickListener);
         musicContentView.setOnClickListener(buttonClickListener);
@@ -659,12 +658,12 @@ public class LiveActivity extends LivePlayerBaseActivity implements InteractionA
                 case R.id.live_interaction_layout:
                     interactionLayout.setVisibility(View.GONE);
                     break;
-                case R.id.gift_btn:
-                    showGiftLayout();
-                    break;
-                case R.id.gift_layout:
-                    giftLayout.setVisibility(View.GONE);
-                    break;
+//                case R.id.gift_btn:
+//                    showGiftLayout();
+//                    break;
+//                case R.id.gift_layout:
+//                    giftLayout.setVisibility(View.GONE);
+//                    break;
                 case R.id.hd_mode_selected:
                     hdSelectedText.setVisibility(View.GONE);
                     hd_choose_layout.setVisibility(View.VISIBLE);
@@ -699,17 +698,17 @@ public class LiveActivity extends LivePlayerBaseActivity implements InteractionA
     }
 
     // 显示礼物布局
-    private void showGiftLayout() {
-        inputPanel.collapse(true);// 收起软键盘
-        giftLayout.setVisibility(View.VISIBLE);
-        adapter.notifyDataSetChanged();
-        if (adapter.getCount() == 0) {
-            // 暂无礼物
-            noGiftText.setVisibility(View.VISIBLE);
-        } else {
-            noGiftText.setVisibility(View.GONE);
-        }
-    }
+//    private void showGiftLayout() {
+//        inputPanel.collapse(true);// 收起软键盘
+//        giftLayout.setVisibility(View.VISIBLE);
+//        adapter.notifyDataSetChanged();
+//        if (adapter.getCount() == 0) {
+//            // 暂无礼物
+//            noGiftText.setVisibility(View.VISIBLE);
+//        } else {
+//            noGiftText.setVisibility(View.GONE);
+//        }
+//    }
 
     protected void updateGiftList(GiftType type) {
         if (!updateGiftCount(type)) {
@@ -730,7 +729,7 @@ public class LiveActivity extends LivePlayerBaseActivity implements InteractionA
     }
 
     private void showMusicLayout() {
-        inputPanel.collapse(true);
+//        inputPanel.collapse(true);
         backgroundMusicLayout.setVisibility(View.VISIBLE);
     }
 

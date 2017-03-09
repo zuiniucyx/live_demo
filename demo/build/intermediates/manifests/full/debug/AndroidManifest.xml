@@ -100,7 +100,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.netease.nim.chatroom.demo.entertainment.activity.LiveModeChooseActivity"
-            android:screenOrientation="landscape"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.netease.nim.chatroom.demo.entertainment.activity.AboutActivity"

@@ -1,4 +1,4 @@
-#Thu Mar 09 11:13:30 CST 2017
+#Thu Mar 09 14:20:43 CST 2017
 base.0=/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_652234da37944a114610a1304ec37291b7d0764b
 renamed.1=classes.dex
 renamed.0=classes2.dex
