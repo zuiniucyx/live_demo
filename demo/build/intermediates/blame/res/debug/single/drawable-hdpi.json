@@ -116,12 +116,12 @@
         "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/drawable-hdpi/pause.png"
     },
     {
-        "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable-hdpi/play.png",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/drawable-hdpi/play.png"
-    },
-    {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable-hdpi/audio_mode_audience_bg.png",
         "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/drawable-hdpi/audio_mode_audience_bg.png"
+    },
+    {
+        "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable-hdpi/play.png",
+        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/drawable-hdpi/play.png"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable-hdpi/nim_emoji_ck_bg.9.png",

@@ -84,7 +84,7 @@
         </activity>
         <activity
             android:name="com.netease.nim.chatroom.demo.im.activity.LoginActivity"
-            android:screenOrientation="landscape"
+            android:screenOrientation="portrait"
             android:theme="@style/LoginTheme"
             android:windowSoftInputMode="adjustPan|stateHidden" />
 
@@ -93,6 +93,7 @@
         <activity
             android:name="com.netease.nim.chatroom.demo.entertainment.activity.MainActivity"
             android:label="@string/my_classes"
+            android:screenOrientation="landscape"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.netease.nim.chatroom.demo.entertainment.activity.IdentifyActivity"
@@ -104,6 +105,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.netease.nim.chatroom.demo.entertainment.activity.AboutActivity"
+            android:screenOrientation="landscape"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.netease.nim.chatroom.demo.entertainment.activity.AudienceActivity"
@@ -117,10 +119,12 @@
             android:windowSoftInputMode="stateHidden|adjustNothing" />
         <activity
             android:name="com.netease.nim.chatroom.demo.entertainment.activity.EnterRoomActivity"
+            android:screenOrientation="landscape"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
             android:name="com.netease.nim.chatroom.demo.entertainment.activity.InputActivity"
+            android:screenOrientation="landscape"
             android:theme="@style/InputActivityTheme"
             android:windowSoftInputMode="stateUnspecified|adjustResize" />
 

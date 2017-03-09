@@ -160,12 +160,12 @@
         "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/drawable-xhdpi/nim_message_input_voice_normal.png"
     },
     {
-        "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable-xhdpi/icon_gfit_bear.png",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/drawable-xhdpi/icon_gfit_bear.png"
-    },
-    {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable-xhdpi/icon_live.png",
         "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/drawable-xhdpi/icon_live.png"
+    },
+    {
+        "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable-xhdpi/icon_gfit_bear.png",
+        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/drawable-xhdpi/icon_gfit_bear.png"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable-xhdpi/nick_name_icon.png",

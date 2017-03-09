@@ -79,7 +79,7 @@
 
         <activity
             android:name=".im.activity.LoginActivity"
-            android:screenOrientation="landscape"
+            android:screenOrientation="portrait"
             android:theme="@style/LoginTheme"
             android:windowSoftInputMode="adjustPan|stateHidden" />
 
@@ -88,6 +88,7 @@
         <activity
             android:name=".entertainment.activity.MainActivity"
             android:label="@string/my_classes"
+            android:screenOrientation="landscape"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
@@ -102,6 +103,7 @@
 
         <activity
             android:name=".entertainment.activity.AboutActivity"
+            android:screenOrientation="landscape"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
@@ -118,11 +120,13 @@
 
         <activity
             android:name=".entertainment.activity.EnterRoomActivity"
+            android:screenOrientation="landscape"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
 
         <activity android:name=".entertainment.activity.InputActivity"
-            android:theme="@style/InputActivityTheme"
+                  android:screenOrientation="landscape"
+                  android:theme="@style/InputActivityTheme"
             android:windowSoftInputMode="stateUnspecified|adjustResize" />
 
         <!-- end entertainment -->
