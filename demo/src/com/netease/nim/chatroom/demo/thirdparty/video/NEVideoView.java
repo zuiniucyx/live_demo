@@ -82,7 +82,7 @@ public class NEVideoView extends SurfaceView implements NEVideoController.MediaP
     private int mCurrState = IDLE;
     private int mNextState = IDLE;
 
-    private int mVideoScalingMode = VideoConstant.VIDEO_SCALING_MODE_FIT;
+    private int mVideoScalingMode = VideoConstant.VIDEO_SCALING_MODE_FILL_BLACK;
 
     private Uri mUri;
     private long mDuration = 0 ;

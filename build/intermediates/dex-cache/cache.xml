@@ -3,30 +3,30 @@
 
     <item
         is-multidex="true"
-        jar="/Users/cyx/Desktop/nim_entertainment_demo/demo/libs/nim-basesdk-3.4.0.jar"
+        jar="/Users/cyx/Desktop/nim_entertainment_demo/demo/libs/nim-chatroom-3.4.0.jar"
         jumboMode="true"
         optimize="true"
-        revision="23.0.2"
-        sha1="a7a871f8cf5bfcaacfe0d9dec8d8951b9dd26af5">
-        <dex dex="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/2/nim-basesdk-3.4.0_cff5c77579ea01e7ebf506dd42077a9cc89a530e/classes.dex" />
+        revision="25.0.0"
+        sha1="2a85dc8ca7a20fefc17bbe0e3908cd9fd50e00e3">
+        <dex dex="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/2/nim-chatroom-3.4.0_c89e4d052aa1fdb1974006fc9cd16486c626bddb/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/cyx/Desktop/nim_entertainment_demo/demo/libs/fastjson-1.1.34.android.jar"
+        jar="/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
-        revision="23.0.2"
-        sha1="bef1d1224be099c387794bce1bdf81b38f37c6ce">
-        <dex dex="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/2/fastjson-1.1.34.android_5a65ee8f03387511c63868611574521187e99e0c/classes.dex" />
+        revision="25.0.0"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/10/classes_eef6079953ab716e68e1db0a6832a7b584e5fd39/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="/Users/cyx/Desktop/nim_entertainment_demo/demo/libs/butterknife-7.0.1.jar"
         jumboMode="true"
         optimize="true"
-        revision="23.0.2"
-        sha1="e8a83f3f01c7cc1719e351f073265bccf1764889">
-        <dex dex="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_56de64255f2e7546b894773870969f04edc3e546/classes.dex" />
+        revision="25.0.0"
+        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
+        <dex dex="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/2/butterknife-7.0.1_0063cef4615def3660d6030ea7c17f6563115466/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -39,30 +39,48 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
+        jar="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
-        revision="23.0.2"
+        revision="25.0.0"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_56de64255f2e7546b894773870969f04edc3e546/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="709afd4784f2e0bb1d11b633126e879bd7abab09">
+        <dex dex="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_652234da37944a114610a1304ec37291b7d0764b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/cyx/.android/build-cache/103e26bda0ebba2a3a24ba569b70e6f819b4333b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
         sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
-        <dex dex="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-23.4.0_334347948c3f89d508e5c2e8ac379ed47510751b/classes.dex" />
+        <dex dex="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a7801981a844e9bdc9c4ac31315f42f41084088e/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/jars/classes.jar"
+        jar="/Users/cyx/.android/build-cache/18b7f48dc5ebcdb7458617f0694d8b1570722cf4/output/jars/libs/internal_impl-23.4.0.jar"
         jumboMode="true"
         optimize="true"
-        revision="23.0.2"
-        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
-        <dex dex="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-23.1.1_4d0fee36beef09a210606157be879c31d506e801/classes.dex" />
+        revision="25.0.0"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.4.0_5d7e7803d6b320b40ae34d52c52ebcae2b262bb5/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/design/23.1.1/jars/classes.jar"
+        jar="/Users/cyx/Desktop/nim_entertainment_demo/demo/libs/NELivePlayer-1.2.2.jar"
         jumboMode="true"
         optimize="true"
-        revision="23.0.2"
-        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
-        <dex dex="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-23.1.1_6748f5a9fefe2736ec54ff41af7bcb1ce22ec7b3/classes.dex" />
+        revision="25.0.0"
+        sha1="8f689479559ab3776fd6d7dafc67e07293d947bf">
+        <dex dex="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/2/NELivePlayer-1.2.2_db57982d258971531c0d78b62ee1f2457c9506e6/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -75,30 +93,30 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jar="/Users/cyx/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
         jumboMode="true"
         optimize="true"
-        revision="23.0.2"
-        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-23.4.0_7fa607bfa3f40254998e28bb5a4eaa39c5aff2c4/classes.dex" />
+        revision="25.0.0"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.4.0_b377ddb0c2c66551b9799ace5ec1386098b4e6ee/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jar="/Users/cyx/.android/build-cache/18b7f48dc5ebcdb7458617f0694d8b1570722cf4/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
-        revision="23.0.2"
+        revision="25.0.0"
         sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.4.0_050446fe48675d9f0a22d5f98cb3792944c840cc/classes.dex" />
+        <dex dex="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9d6206ac597b6f612c268282265fa84994841b13/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jar="/Users/cyx/Desktop/nim_entertainment_demo/demo/libs/nrtc-sdk.jar"
         jumboMode="true"
         optimize="true"
-        revision="23.0.2"
-        sha1="754a3cb9a071c68f9369ffd2b430681084e8c0a9">
-        <dex dex="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_652234da37944a114610a1304ec37291b7d0764b/classes.dex" />
+        revision="25.0.0"
+        sha1="46c6daf87ac56784bc07480e015e69806e243b29">
+        <dex dex="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/2/nrtc-sdk_baad29f5a1116fcf402b7ea26fd5fb72351928f2/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -111,21 +129,39 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/cyx/Desktop/nim_entertainment_demo/demo/libs/universal-image-loader-1.9.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="dd9eeb557650c4ad7394df23f0f5cf27a7cfc697">
+        <dex dex="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/2/universal-image-loader-1.9.4_cbd32557056bb1295c737406fb73d774b1c2fa68/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/cyx/.android/build-cache/b2927979d17f7ca20068ead373581c16928b3714/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f419d267b3bbaba2b9dbb4d2b7743b1b47ae0459/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/cyx/.android/build-cache/6f427d6897d7b08f6665c9205a9006033ad2be94/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d1d9b7733e729db2cd754a3a7388c44c96d628bd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/cyx/Desktop/nim_entertainment_demo/demo/libs/NELivePlayer-1.2.2.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.2"
         sha1="8f689479559ab3776fd6d7dafc67e07293d947bf">
         <dex dex="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/2/NELivePlayer-1.2.2_db57982d258971531c0d78b62ee1f2457c9506e6/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
-        <dex dex="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.4.0_7afee00d6f99ccf220ff03fb28e04f752318e22b/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -138,12 +174,57 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jar="/Users/cyx/Desktop/nim_entertainment_demo/demo/libs/nim-basesdk-3.4.0.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.2"
-        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.4.0_7497c10bfbc61d82eb32fb506e2302672ea5d163/classes.dex" />
+        sha1="a7a871f8cf5bfcaacfe0d9dec8d8951b9dd26af5">
+        <dex dex="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/2/nim-basesdk-3.4.0_cff5c77579ea01e7ebf506dd42077a9cc89a530e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/cyx/Desktop/nim_entertainment_demo/demo/libs/nim-avchat-3.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="dbd93cf559e560d14d596618841333f286deef17">
+        <dex dex="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/2/nim-avchat-3.4.0_5d6ca016b281d2903f635c77b0cb45cc62712b45/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/cyx/Desktop/nim_entertainment_demo/demo/libs/fastjson-1.1.34.android.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="bef1d1224be099c387794bce1bdf81b38f37c6ce">
+        <dex dex="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/2/fastjson-1.1.34.android_5a65ee8f03387511c63868611574521187e99e0c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/cyx/Desktop/nim_entertainment_demo/demo/libs/nim-basesdk-3.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a7a871f8cf5bfcaacfe0d9dec8d8951b9dd26af5">
+        <dex dex="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/2/nim-basesdk-3.4.0_cff5c77579ea01e7ebf506dd42077a9cc89a530e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/cyx/Desktop/nim_entertainment_demo/demo/libs/fastjson-1.1.34.android.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bef1d1224be099c387794bce1bdf81b38f37c6ce">
+        <dex dex="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/2/fastjson-1.1.34.android_5a65ee8f03387511c63868611574521187e99e0c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/cyx/.android/build-cache/a57830e8a12050f927e2650b175a9af8ec351aad/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0d9aa44cd3e1714bf3c5dfb618154b172bd0f9c2/classes.dex" />
     </item>
     <item
         is-multidex="true"

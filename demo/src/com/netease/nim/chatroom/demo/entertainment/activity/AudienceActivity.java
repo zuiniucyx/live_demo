@@ -8,7 +8,6 @@ import android.text.TextUtils;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -28,7 +27,6 @@ import com.netease.nim.chatroom.demo.entertainment.helper.MicHelper;
 import com.netease.nim.chatroom.demo.entertainment.helper.SimpleCallback;
 import com.netease.nim.chatroom.demo.entertainment.http.ChatRoomHttpClient;
 import com.netease.nim.chatroom.demo.entertainment.module.ConnectedAttachment;
-import com.netease.nim.chatroom.demo.entertainment.module.LikeAttachment;
 import com.netease.nim.chatroom.demo.im.config.UserPreferences;
 import com.netease.nim.chatroom.demo.im.ui.dialog.EasyAlertDialogHelper;
 import com.netease.nim.chatroom.demo.permission.MPermission;
@@ -51,7 +49,6 @@ import com.netease.nimlib.sdk.avchat.model.AVChatAudioFrame;
 import com.netease.nimlib.sdk.avchat.model.AVChatOptionalConfig;
 import com.netease.nimlib.sdk.avchat.model.AVChatVideoFrame;
 import com.netease.nimlib.sdk.avchat.model.AVChatVideoRender;
-import com.netease.nimlib.sdk.chatroom.ChatRoomMessageBuilder;
 import com.netease.nimlib.sdk.chatroom.ChatRoomService;
 import com.netease.nimlib.sdk.chatroom.model.ChatRoomMember;
 import com.netease.nimlib.sdk.chatroom.model.ChatRoomMessage;
@@ -87,8 +84,8 @@ public class AudienceActivity extends LivePlayerBaseActivity implements VideoPla
     private TextView finishTipText;
     private TextView finishNameText;
     private TextView preparedText;
-    private Button sendGiftBtn;
-    private ImageButton switchBtn;
+//    private Button sendGiftBtn;
+//    private ImageButton switchBtn;
 
     private ViewGroup roomOwnerLayout; // master名称布局
 //    private ViewGroup inputLayout; // 输入框布局
@@ -275,7 +272,7 @@ public class AudienceActivity extends LivePlayerBaseActivity implements VideoPla
         videoRender.setVisibility(View.GONE);
         videoView.setVisibility(View.VISIBLE);
         videoPlayer = new VideoPlayer(AudienceActivity.this, videoView, null, url,
-                UserPreferences.getPlayerStrategy(), this, VideoConstant.VIDEO_SCALING_MODE_FILL_BLACK);
+                UserPreferences.getPlayerStrategy(), this, VideoConstant.VIDEO_SCALING_MODE_FILL_SCALE);
 
         videoPlayer.openVideo();
     }
@@ -294,14 +291,14 @@ public class AudienceActivity extends LivePlayerBaseActivity implements VideoPla
         interactionBtn = findView(R.id.interaction_btn);
 //        interactionBtn.setVisibility(View.GONE);
 //        likeBtn = findView(R.id.like_btn);
-        switchBtn = findView(R.id.switch_btn);
+//        switchBtn = findView(R.id.switch_btn);
         beautyBtn = findView(R.id.beauty_btn);
 
         closeBtn.setOnClickListener(buttonClickListener);
         interactionBtn.setOnClickListener(buttonClickListener);
 //        giftBtn.setOnClickListener(buttonClickListener);
 //        likeBtn.setOnClickListener(buttonClickListener);
-        switchBtn.setOnClickListener(buttonClickListener);
+//        switchBtn.setOnClickListener(buttonClickListener);
         beautyBtn.setOnClickListener(buttonClickListener);
 
         // 互动
@@ -444,26 +441,26 @@ public class AudienceActivity extends LivePlayerBaseActivity implements VideoPla
      * 点赞爱心
      ********************************/
 
-    // 发送点赞爱心
-    private void sendLike() {
-        if (!isFastClick()) {
-            LikeAttachment attachment = new LikeAttachment();
-            ChatRoomMessage message = ChatRoomMessageBuilder.createChatRoomCustomMessage(roomId, attachment);
-            setMemberType(message);
-            NIMClient.getService(ChatRoomService.class).sendMessage(message, false);
-        }
-    }
+//    // 发送点赞爱心
+//    private void sendLike() {
+//        if (!isFastClick()) {
+//            LikeAttachment attachment = new LikeAttachment();
+//            ChatRoomMessage message = ChatRoomMessageBuilder.createChatRoomCustomMessage(roomId, attachment);
+//            setMemberType(message);
+//            NIMClient.getService(ChatRoomService.class).sendMessage(message, false);
+//        }
+//    }
 
-    // 发送爱心频率控制
-    private boolean isFastClick() {
-        long currentTime = System.currentTimeMillis();
-        long time = currentTime - lastClickTime;
-        if (time > 0 && time < 1000) {
-            return true;
-        }
-        lastClickTime = currentTime;
-        return false;
-    }
+//    // 发送爱心频率控制
+//    private boolean isFastClick() {
+//        long currentTime = System.currentTimeMillis();
+//        long time = currentTime - lastClickTime;
+//        if (time > 0 && time < 1000) {
+//            return true;
+//        }
+//        lastClickTime = currentTime;
+//        return false;
+//    }
 
     /***********************
      * 收发礼物
@@ -917,7 +914,7 @@ public class AudienceActivity extends LivePlayerBaseActivity implements VideoPla
     // 更新UI布局,包括输入框,按钮的变化
     private void updateMicUI(int style) {
         connectionViewCloseBtn.setVisibility(View.VISIBLE);
-        switchBtn.setVisibility(style == AVChatType.VIDEO.getValue() ? View.VISIBLE : View.GONE);
+//        switchBtn.setVisibility(style == AVChatType.VIDEO.getValue() ? View.VISIBLE : View.GONE);
         beautyBtn.setVisibility(style == AVChatType.VIDEO.getValue() ? View.VISIBLE : View.GONE );
         interactionBtn.setVisibility(View.GONE);
 //        inputPanel.hideInputPanel();
@@ -978,12 +975,12 @@ public class AudienceActivity extends LivePlayerBaseActivity implements VideoPla
             isMeOnMic = false;
             isMyAlreadyApply = false;
             interactionBtn.setVisibility(View.VISIBLE);
-            switchBtn.setVisibility(View.GONE);
+//            switchBtn.setVisibility(View.GONE);
             beautyBtn.setVisibility(View.GONE);
 //            inputPanel.showInputPanel();
             RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(
                     ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-            lp.addRule(RelativeLayout.ABOVE, R.id.messageActivityBottomLayout);//设置在输入框上方
+            lp.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);//设置置底
             controlLayout.setLayoutParams(lp);//动态改变布局
             bypassVideoRender.setVisibility(View.GONE);
             resetApplyLayout();
@@ -1031,7 +1028,7 @@ public class AudienceActivity extends LivePlayerBaseActivity implements VideoPla
                         }
                     });
                     videoPlayer = new VideoPlayer(AudienceActivity.this, videoView, null, url,
-                            UserPreferences.getPlayerStrategy(), this, VideoConstant.VIDEO_SCALING_MODE_FILL_BLACK);
+                            UserPreferences.getPlayerStrategy(), this, VideoConstant.VIDEO_SCALING_MODE_FILL_SCALE);
                 }
                 videoPlayer.postReopenVideoTask(VideoPlayer.VIDEO_COMPLETED_REOPEN_TIMEOUT);
             }

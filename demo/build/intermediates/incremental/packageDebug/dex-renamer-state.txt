@@ -1,7 +1,4 @@
-#Thu Mar 09 14:20:43 CST 2017
-base.0=/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_652234da37944a114610a1304ec37291b7d0764b
-renamed.1=classes.dex
-renamed.0=classes2.dex
-file.1=/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_56de64255f2e7546b894773870969f04edc3e546/classes.dex
-base.1=/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_56de64255f2e7546b894773870969f04edc3e546
-file.0=/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_652234da37944a114610a1304ec37291b7d0764b/classes.dex
+#Sat Mar 11 12:09:49 CST 2017
+base.0=/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/1f/main
+renamed.0=classes.dex
+file.0=/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex

@@ -1,7 +1,7 @@
 [
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_bar_up_container.xml"
+        "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/layout/abc_action_bar_up_container.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/about_layout.xml",
@@ -21,7 +21,7 @@
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_screen_simple_overlay_action_mode.xml"
+        "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/layout/abc_screen_simple_overlay_action_mode.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/identify_activity.xml",
@@ -29,7 +29,7 @@
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_bar_view_list_nav_layout.xml"
+        "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/layout/abc_action_bar_view_list_nav_layout.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/interaction_member_item.xml",
@@ -37,7 +37,7 @@
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/design_navigation_item_subheader.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_navigation_item_subheader.xml"
+        "source": "/Users/cyx/.android/build-cache/6f427d6897d7b08f6665c9205a9006033ad2be94/output/res/layout/design_navigation_item_subheader.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/mediacontroller.xml",
@@ -45,11 +45,11 @@
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_select_dialog_material.xml"
+        "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/layout/abc_select_dialog_material.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_search_view.xml"
+        "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/layout/abc_search_view.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/input_activity.xml",
@@ -57,7 +57,7 @@
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/notification_template_big_media.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_big_media.xml"
+        "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/layout/notification_template_big_media.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/login_activity.xml",
@@ -69,11 +69,11 @@
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/design_layout_tab_text.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_layout_tab_text.xml"
+        "source": "/Users/cyx/.android/build-cache/6f427d6897d7b08f6665c9205a9006033ad2be94/output/res/layout/design_layout_tab_text.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_menu_layout.xml"
+        "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/layout/abc_action_menu_layout.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/background_music_control_layout.xml",
@@ -81,19 +81,19 @@
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_screen_toolbar.xml"
+        "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/layout/abc_screen_toolbar.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/main_activity.xml",
         "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/layout/main_activity.xml"
     },
     {
-        "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_menu_item_layout.xml"
-    },
-    {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/nim_message_activity_actions_layout.xml",
         "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/layout/nim_message_activity_actions_layout.xml"
+    },
+    {
+        "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
+        "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/layout/abc_action_menu_item_layout.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/message_item_text.xml",
@@ -113,15 +113,15 @@
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_part_chronometer.xml"
+        "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/design_navigation_menu_item.xml",
+        "source": "/Users/cyx/.android/build-cache/6f427d6897d7b08f6665c9205a9006033ad2be94/output/res/layout/design_navigation_menu_item.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/live_control_layout.xml",
         "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/layout/live_control_layout.xml"
-    },
-    {
-        "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/design_navigation_menu_item.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_navigation_menu_item.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/nim_emoji_layout.xml",
@@ -133,7 +133,7 @@
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/select_dialog_item_material.xml"
+        "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/layout/select_dialog_item_material.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/nim_message_item.xml",
@@ -141,11 +141,11 @@
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_dialog_title_material.xml"
+        "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/layout/abc_dialog_title_material.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/design_layout_snackbar_include.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_layout_snackbar_include.xml"
+        "source": "/Users/cyx/.android/build-cache/6f427d6897d7b08f6665c9205a9006033ad2be94/output/res/layout/design_layout_snackbar_include.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/net_detect_detail_layout.xml",
@@ -165,7 +165,7 @@
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/design_navigation_menu.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_navigation_menu.xml"
+        "source": "/Users/cyx/.android/build-cache/6f427d6897d7b08f6665c9205a9006033ad2be94/output/res/layout/design_navigation_menu.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/nim_message_activity_bottom_layout.xml",
@@ -173,7 +173,7 @@
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_screen_content_include.xml"
+        "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/layout/abc_screen_content_include.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/pull_to_refresh_header_horizontal.xml",
@@ -181,7 +181,7 @@
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_list_menu_item_icon.xml"
+        "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/layout/abc_list_menu_item_icon.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/activity_welcome.xml",
@@ -189,7 +189,7 @@
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_media.xml"
+        "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/layout/notification_template_media.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/nim_sticker_picker_view.xml",
@@ -213,7 +213,7 @@
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/select_dialog_singlechoice_material.xml"
+        "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/layout/select_dialog_singlechoice_material.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/live_mode_choose_activity.xml",
@@ -225,11 +225,11 @@
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/design_navigation_item.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_navigation_item.xml"
+        "source": "/Users/cyx/.android/build-cache/6f427d6897d7b08f6665c9205a9006033ad2be94/output/res/layout/design_navigation_item.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/design_layout_tab_icon.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_layout_tab_icon.xml"
+        "source": "/Users/cyx/.android/build-cache/6f427d6897d7b08f6665c9205a9006033ad2be94/output/res/layout/design_layout_tab_icon.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/audience_interaction_layout.xml",
@@ -237,7 +237,7 @@
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_search_dropdown_item_icons_2line.xml"
+        "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/layout/abc_search_dropdown_item_icons_2line.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/nim_listview_refresh.xml",
@@ -245,11 +245,11 @@
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_activity_chooser_view_list_item.xml"
+        "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/layout/abc_activity_chooser_view_list_item.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_list_menu_item_radio.xml"
+        "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/layout/abc_list_menu_item_radio.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/nim_emoji_item.xml",
@@ -261,15 +261,15 @@
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_popup_menu_item_layout.xml"
+        "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/layout/abc_popup_menu_item_layout.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_part_time.xml"
+        "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/layout/notification_template_part_time.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/support_simple_spinner_dropdown_item.xml"
+        "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/layout/support_simple_spinner_dropdown_item.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/nim_easy_alert_dialog_title.xml",
@@ -281,7 +281,7 @@
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/notification_media_action.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_media_action.xml"
+        "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/layout/notification_media_action.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/hd_layout.xml",
@@ -293,23 +293,23 @@
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_alert_dialog_material.xml"
+        "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/layout/abc_alert_dialog_material.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/design_navigation_item_header.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_navigation_item_header.xml"
+        "source": "/Users/cyx/.android/build-cache/6f427d6897d7b08f6665c9205a9006033ad2be94/output/res/layout/design_navigation_item_header.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_activity_chooser_view.xml"
+        "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/layout/abc_activity_chooser_view.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_mode_close_item_material.xml"
+        "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/layout/abc_action_mode_close_item_material.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_expanded_menu_layout.xml"
+        "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/layout/abc_expanded_menu_layout.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/nim_message_item_unknown.xml",
@@ -317,7 +317,7 @@
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/design_navigation_item_separator.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_navigation_item_separator.xml"
+        "source": "/Users/cyx/.android/build-cache/6f427d6897d7b08f6665c9205a9006033ad2be94/output/res/layout/design_navigation_item_separator.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/gift_layout.xml",
@@ -325,11 +325,11 @@
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_big_media_narrow.xml"
+        "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/layout/notification_template_big_media_narrow.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_bar_title_item.xml"
+        "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/layout/abc_action_bar_title_item.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/nim_message_item_text.xml",
@@ -337,7 +337,7 @@
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/select_dialog_multichoice_material.xml"
+        "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/layout/select_dialog_multichoice_material.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/network_state_layout.xml",
@@ -345,27 +345,27 @@
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_screen_simple.xml"
+        "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/layout/abc_screen_simple.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_list_menu_item_checkbox.xml"
+        "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/layout/abc_list_menu_item_checkbox.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/notification_media_cancel_action.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_media_cancel_action.xml"
+        "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/layout/notification_media_cancel_action.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/design_layout_snackbar.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_layout_snackbar.xml"
+        "source": "/Users/cyx/.android/build-cache/6f427d6897d7b08f6665c9205a9006033ad2be94/output/res/layout/design_layout_snackbar.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_alert_dialog_button_bar_material.xml"
+        "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/layout/abc_alert_dialog_button_bar_material.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/notification_template_lines.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_lines.xml"
+        "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/layout/notification_template_lines.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/audience_activity.xml",
@@ -377,11 +377,11 @@
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/design_menu_item_action_area.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_menu_item_action_area.xml"
+        "source": "/Users/cyx/.android/build-cache/6f427d6897d7b08f6665c9205a9006033ad2be94/output/res/layout/design_menu_item_action_area.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_mode_bar.xml"
+        "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/layout/abc_action_mode_bar.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/live_interaction_layout.xml",
@@ -389,6 +389,6 @@
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_list_menu_item_layout.xml"
+        "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/layout/abc_list_menu_item_layout.xml"
     }
 ]

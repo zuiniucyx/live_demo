@@ -4,14 +4,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary">
-
-    </android.support.v7.widget.Toolbar>
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -42,7 +34,7 @@
 
                 <com.netease.nim.chatroom.demo.im.ui.widget.ClearableEditTextWithIcon
                     android:id="@+id/edit_login_account"
-                    android:layout_width="match_parent"
+                    android:layout_width="400dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/edittext_white_normal"
                     android:drawablePadding="15dp"
@@ -52,11 +44,12 @@
                     android:textColor="@color/white"
                     android:textColorHint="@color/color_white_66ffffff"
                     android:textCursorDrawable="@null"
-                    android:textSize="15sp" />
+                    android:textSize="18sp"
+                    android:layout_gravity="center_horizontal"/>
 
                 <com.netease.nim.chatroom.demo.im.ui.widget.ClearableEditTextWithIcon
                     android:id="@+id/edit_login_password"
-                    android:layout_width="match_parent"
+                    android:layout_width="400dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/edittext_white_normal"
                     android:drawablePadding="15dp"
@@ -68,11 +61,12 @@
                     android:textColor="@color/white"
                     android:textColorHint="@color/color_white_66ffffff"
                     android:textCursorDrawable="@null"
-                    android:textSize="15sp" />
+                    android:textSize="18sp"
+                    android:layout_gravity="center_horizontal"/>
 
                 <Button
                     android:id="@+id/done"
-                    android:layout_width="match_parent"
+                    android:layout_width="400dp"
                     android:layout_height="45dp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginLeft="15dp"
@@ -80,7 +74,7 @@
                     android:layout_marginTop="15dp"
                     android:background="@drawable/g_white_btn_selector"
                     android:text="@string/login"
-                    android:textSize="17sp" />
+                    android:textSize="18sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -92,8 +86,9 @@
 
                 <com.netease.nim.chatroom.demo.im.ui.widget.ClearableEditTextWithIcon
                     android:id="@+id/edit_register_account"
-                    android:layout_width="match_parent"
+                    android:layout_width="400dp"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
                     android:background="@drawable/edittext_white_normal"
                     android:digits="1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
                     android:drawablePadding="15dp"
@@ -104,12 +99,13 @@
                     android:textColor="@color/white"
                     android:textColorHint="@color/color_white_66ffffff"
                     android:textCursorDrawable="@null"
-                    android:textSize="15sp" />
+                    android:textSize="18sp" />
 
                 <com.netease.nim.chatroom.demo.im.ui.widget.ClearableEditTextWithIcon
                     android:id="@+id/edit_register_nickname"
-                    android:layout_width="match_parent"
+                    android:layout_width="400dp"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
                     android:background="@drawable/edittext_white_normal"
                     android:drawablePadding="15dp"
                     android:hint="@string/input_nickname"
@@ -119,12 +115,13 @@
                     android:textColor="@color/white"
                     android:textColorHint="@color/color_white_66ffffff"
                     android:textCursorDrawable="@null"
-                    android:textSize="15sp" />
+                    android:textSize="18sp" />
 
                 <com.netease.nim.chatroom.demo.im.ui.widget.ClearableEditTextWithIcon
                     android:id="@+id/edit_register_password"
-                    android:layout_width="match_parent"
+                    android:layout_width="400dp"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
                     android:background="@drawable/edittext_white_normal"
                     android:drawablePadding="15dp"
                     android:hint="@string/input_password"
@@ -135,11 +132,11 @@
                     android:textColor="@color/white"
                     android:textColorHint="@color/color_white_66ffffff"
                     android:textCursorDrawable="@null"
-                    android:textSize="15sp" />
+                    android:textSize="18sp" />
 
                 <Button
                     android:id="@+id/register_btn"
-                    android:layout_width="match_parent"
+                    android:layout_width="400dp"
                     android:layout_height="45dp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginLeft="15dp"
@@ -147,7 +144,7 @@
                     android:layout_marginTop="15dp"
                     android:background="@drawable/g_white_btn_selector"
                     android:text="@string/done"
-                    android:textSize="17sp" />
+                    android:textSize="18sp" />
             </LinearLayout>
         </FrameLayout>
 
@@ -160,7 +157,17 @@
             android:padding="20dip"
             android:text="@string/register"
             android:textColor="@drawable/register_tip_selector"
-            android:textSize="15sp" />
+            android:textSize="18sp"
+            android:layout_marginBottom="20dp"/>
 
     </RelativeLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
+
+    </android.support.v7.widget.Toolbar>
+
 </LinearLayout>

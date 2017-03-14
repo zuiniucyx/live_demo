@@ -13,9 +13,6 @@ import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
-import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,18 +21,13 @@ import com.netease.nim.chatroom.demo.DemoCache;
 import com.netease.nim.chatroom.demo.R;
 import com.netease.nim.chatroom.demo.base.util.log.LogUtil;
 import com.netease.nim.chatroom.demo.entertainment.adapter.InteractionAdapter;
-import com.netease.nim.chatroom.demo.entertainment.constant.GiftConstant;
-import com.netease.nim.chatroom.demo.entertainment.constant.GiftType;
 import com.netease.nim.chatroom.demo.entertainment.constant.LiveType;
 import com.netease.nim.chatroom.demo.entertainment.constant.MicStateEnum;
 import com.netease.nim.chatroom.demo.entertainment.constant.PushLinkConstant;
 import com.netease.nim.chatroom.demo.entertainment.helper.ChatRoomMemberCache;
-import com.netease.nim.chatroom.demo.entertainment.helper.GiftCache;
 import com.netease.nim.chatroom.demo.entertainment.helper.MicHelper;
-import com.netease.nim.chatroom.demo.entertainment.model.Gift;
 import com.netease.nim.chatroom.demo.entertainment.model.InteractionMember;
 import com.netease.nim.chatroom.demo.im.ui.dialog.EasyAlertDialogHelper;
-import com.netease.nim.chatroom.demo.im.ui.widget.SwitchButton;
 import com.netease.nim.chatroom.demo.im.util.file.AttachmentStore;
 import com.netease.nim.chatroom.demo.permission.MPermission;
 import com.netease.nim.chatroom.demo.permission.annotation.OnMPermissionDenied;
@@ -72,7 +64,6 @@ import com.netease.nrtc.effect.video.GPUImageSaturationFilter;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
@@ -85,8 +76,8 @@ public class LiveActivity extends LivePlayerBaseActivity implements InteractionA
     private View backBtn;
     private View startLayout;
     private Button startBtn;
-    private ImageButton switchBtn;
-    private TextView noGiftText;
+//    private ImageButton switchBtn;
+//    private TextView noGiftText;
     private ViewGroup liveFinishLayout;
     private Button liveFinishBtn;
     private ViewGroup hdBtn;
@@ -99,17 +90,17 @@ public class LiveActivity extends LivePlayerBaseActivity implements InteractionA
     private TextView applyCountText;
     private GridView interactionGridView;
     private AVChatVideoRender videoRender; // 主播画面
-    private ImageButton musicBtn;
-    private ViewGroup backgroundMusicLayout;
-    private RelativeLayout musicBlankView;
-    private LinearLayout musicContentView;
-    private SwitchButton musicSwitchButton;
-    private TextView musicSongFirstContent;
-    private TextView musicSongSecondContent;
-    private ImageView musicSongFirstControl;
-    private ImageView musicSongSecondControl;
-    private TextView musicSongVolumeContent;
-    private SeekBar musicSongVolumeControl;
+//    private ImageButton musicBtn;
+//    private ViewGroup backgroundMusicLayout;
+//    private RelativeLayout musicBlankView;
+//    private LinearLayout musicContentView;
+//    private SwitchButton musicSwitchButton;
+//    private TextView musicSongFirstContent;
+//    private TextView musicSongSecondContent;
+//    private ImageView musicSongFirstControl;
+//    private ImageView musicSongSecondControl;
+//    private TextView musicSongVolumeContent;
+//    private SeekBar musicSongVolumeControl;
     /* 网络状态 */
     private ViewGroup networkStateLayout;
     private TextView netStateTipText; // 网络状态提示
@@ -127,7 +118,7 @@ public class LiveActivity extends LivePlayerBaseActivity implements InteractionA
     private boolean isMusicSecondPause = false;
 
     // data
-    private List<Gift> giftList = new ArrayList<>(); // 礼物列表数据
+//    private List<Gift> giftList = new ArrayList<>(); // 礼物列表数据
     private int interactionCount = 0; // 互动申请人数
     private InteractionAdapter interactionAdapter; // 互动人员adapter
     private List<InteractionMember> interactionDataSource; // 互动人员列表
@@ -151,7 +142,7 @@ public class LiveActivity extends LivePlayerBaseActivity implements InteractionA
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        loadGift();
+//        loadGift();
         registerLiveObservers(true);
 
         //目前伴音功能的音乐文件，nrtc只支持读取存储空间里面的音乐文件，不支持assets中的文件，所以这里将文件拷贝到存储空间里面
@@ -222,8 +213,8 @@ public class LiveActivity extends LivePlayerBaseActivity implements InteractionA
 
     @Override
     protected void onDestroy() {
-        // 释放资源
-        giftList.clear();
+//        // 释放资源
+//        giftList.clear();
 
         if (mGPUEffect != null) {
             mGPUEffect.dispose();
@@ -347,9 +338,9 @@ public class LiveActivity extends LivePlayerBaseActivity implements InteractionA
         backBtn = findView(R.id.BackBtn);
         startLayout = findViewById(R.id.start_layout);
         startBtn = (Button) findViewById(R.id.start_live_btn);
-        switchBtn = (ImageButton) findViewById(R.id.switch_btn);
+//        switchBtn = (ImageButton) findViewById(R.id.switch_btn);
         beautyBtn = (ImageButton) findViewById(R.id.beauty_btn);
-        noGiftText = findView(R.id.no_gift_tip);
+//        noGiftText = findView(R.id.no_gift_tip);
         controlLayout = findView(R.id.control_layout);
         interactionLayout = findView(R.id.live_interaction_layout);
         noApplyText = findView(R.id.no_apply_tip);
@@ -363,9 +354,9 @@ public class LiveActivity extends LivePlayerBaseActivity implements InteractionA
         hdFirstText = findView(R.id.hd_first_mode);
         hdSecondText = findView(R.id.hd_second_mode);
 
-        //背景乐
-        musicBtn = findView(R.id.music_btn);
-        findMusicLayout();
+//        //背景乐
+//        musicBtn = findView(R.id.music_btn);
+//        findMusicLayout();
 
         // 直播结束
         liveFinishLayout = findView(R.id.live_finish_layout);
@@ -385,11 +376,11 @@ public class LiveActivity extends LivePlayerBaseActivity implements InteractionA
 
         // 视频/音频，布局设置
         if (liveType == LiveType.AUDIO_TYPE) {
-            switchBtn.setVisibility(View.GONE);
+//            switchBtn.setVisibility(View.GONE);
             hdBtn.setVisibility(View.GONE);
             beautyBtn.setVisibility(View.GONE);
         } else if (liveType == LiveType.VIDEO_TYPE) {
-            switchBtn.setVisibility(View.VISIBLE);
+//            switchBtn.setVisibility(View.VISIBLE);
             hdBtn.setVisibility(View.VISIBLE);
             beautyBtn.setVisibility(View.VISIBLE);
         }
@@ -408,129 +399,129 @@ public class LiveActivity extends LivePlayerBaseActivity implements InteractionA
 //        giftView.setAdapter(adapter);
 //    }
 
-    protected void findMusicLayout() {
-        backgroundMusicLayout = findView(R.id.background_music_layout);
-        musicBlankView = findView(R.id.background_music_blank_view);
-        musicContentView = findView(R.id.background_music_content_view);
-        musicSwitchButton = findView(R.id.music_switch_button);
-        musicSongFirstContent = findView(R.id.music_song_first_content);
-        musicSongSecondContent = findView(R.id.music_song_second_content);
-        musicSongFirstControl = findView(R.id.music_song_first_control);
-        musicSongFirstControl.setOnClickListener(musicListener);
-        musicSongSecondControl = findView(R.id.music_song_second_control);
-        musicSongSecondControl.setOnClickListener(musicListener);
-        musicSongVolumeContent = findView(R.id.music_song_volume_content);
-        musicSongVolumeControl = findView(R.id.music_song_volume_control);
-        updateMusicLayoutState();
-        musicSwitchButton.setOnChangedListener(new SwitchButton.OnChangedListener() {
-            @Override
-            public void OnChanged(View v, boolean checkState) {
-                isMusicSwitchButtonEnable = checkState;
-                updateMusicLayoutState();
-            }
-        });
-        musicSongVolumeControl.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+//    protected void findMusicLayout() {
+//        backgroundMusicLayout = findView(R.id.background_music_layout);
+//        musicBlankView = findView(R.id.background_music_blank_view);
+//        musicContentView = findView(R.id.background_music_content_view);
+//        musicSwitchButton = findView(R.id.music_switch_button);
+//        musicSongFirstContent = findView(R.id.music_song_first_content);
+//        musicSongSecondContent = findView(R.id.music_song_second_content);
+//        musicSongFirstControl = findView(R.id.music_song_first_control);
+//        musicSongFirstControl.setOnClickListener(musicListener);
+//        musicSongSecondControl = findView(R.id.music_song_second_control);
+//        musicSongSecondControl.setOnClickListener(musicListener);
+//        musicSongVolumeContent = findView(R.id.music_song_volume_content);
+//        musicSongVolumeControl = findView(R.id.music_song_volume_control);
+//        updateMusicLayoutState();
+//        musicSwitchButton.setOnChangedListener(new SwitchButton.OnChangedListener() {
+//            @Override
+//            public void OnChanged(View v, boolean checkState) {
+//                isMusicSwitchButtonEnable = checkState;
+//                updateMusicLayoutState();
+//            }
+//        });
+//        musicSongVolumeControl.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+//            @Override
+//            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+//
+//            }
+//
+//            @Override
+//            public void onStartTrackingTouch(SeekBar seekBar) {
+//
+//            }
+//
+//            @Override
+//            public void onStopTrackingTouch(SeekBar seekBar) {
+//                AVChatManager.getInstance().setParameter(AVChatParameters.KEY_AUDIO_MIXING_STREAM_VOLUME, seekBar.getProgress() * 1.0f / 100);
+//            }
+//        });
+//    }
 
-            }
+//    protected void updateMusicLayoutState() {
+//        musicSongFirstContent.setEnabled(isMusicSwitchButtonEnable);
+//        musicSongSecondContent.setEnabled(isMusicSwitchButtonEnable);
+//        musicSongFirstControl.setEnabled(isMusicSwitchButtonEnable);
+//        musicSongSecondControl.setEnabled(isMusicSwitchButtonEnable);
+//        musicSongVolumeContent.setEnabled(isMusicSwitchButtonEnable);
+//        musicSongVolumeControl.setEnabled(isMusicSwitchButtonEnable);
+//        if (!isMusicSwitchButtonEnable) {
+//            resetMusicLayoutViews(true, true);
+//            AVChatManager.getInstance().stopAudioMixing();
+//        }
+//    }
 
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-                AVChatManager.getInstance().setParameter(AVChatParameters.KEY_AUDIO_MIXING_STREAM_VOLUME, seekBar.getProgress() * 1.0f / 100);
-            }
-        });
-    }
-
-    protected void updateMusicLayoutState() {
-        musicSongFirstContent.setEnabled(isMusicSwitchButtonEnable);
-        musicSongSecondContent.setEnabled(isMusicSwitchButtonEnable);
-        musicSongFirstControl.setEnabled(isMusicSwitchButtonEnable);
-        musicSongSecondControl.setEnabled(isMusicSwitchButtonEnable);
-        musicSongVolumeContent.setEnabled(isMusicSwitchButtonEnable);
-        musicSongVolumeControl.setEnabled(isMusicSwitchButtonEnable);
-        if (!isMusicSwitchButtonEnable) {
-            resetMusicLayoutViews(true, true);
-            AVChatManager.getInstance().stopAudioMixing();
-        }
-    }
-
-    private View.OnClickListener musicListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            String rootPath = Environment.getExternalStorageDirectory().getAbsolutePath() + "/" + getPackageName();
-            switch (v.getId()) {
-                case R.id.music_song_first_control:
-                    if (isMusicFirstPlaying) {
-                        AVChatManager.getInstance().pauseAudioMixing();
-                        musicSongFirstControl.setImageResource(R.drawable.background_music_control_play);
-                        musicSongFirstContent.setText(R.string.background_music_song_first_play);
-                        isMusicFirstPlaying = false;
-                        isMusicFirstPause = true;
-                    } else {
-                        if (isMusicSecondPlaying) {
-                            resetMusicLayoutViews(false, true);
-                        }
-
-                        isMusicFirstPlaying = true;
-                        musicSongFirstControl.setImageResource(R.drawable.background_music_control_pause);
-                        musicSongFirstContent.setText(R.string.background_music_song_first_pause);
-                        if (isMusicFirstPause) {
-                            AVChatManager.getInstance().resumeAudioMixing();
-                        } else {
-                            String songPath = rootPath + "/music/first_song.mp3";
-
-                            AVChatManager.getInstance().startAudioMixing(songPath, true, false, 100, musicSongVolumeControl.getProgress() * 1.0f / 100);
-                        }
-                    }
-
-                    break;
-                case R.id.music_song_second_control:
-                    if (isMusicSecondPlaying) {
-                        AVChatManager.getInstance().pauseAudioMixing();
-                        musicSongSecondControl.setImageResource(R.drawable.background_music_control_play);
-                        musicSongSecondContent.setText(R.string.background_music_song_second_play);
-                        isMusicSecondPlaying = false;
-                        isMusicSecondPause = true;
-                    } else {
-                        if (isMusicFirstPlaying) {
-                            resetMusicLayoutViews(true, false);
-                        }
-
-                        isMusicSecondPlaying = true;
-                        musicSongSecondControl.setImageResource(R.drawable.background_music_control_pause);
-                        musicSongSecondContent.setText(R.string.background_music_song_second_pause);
-                        if (isMusicSecondPause) {
-                            AVChatManager.getInstance().resumeAudioMixing();
-                        } else {
-                            String songPath = rootPath + "/music/second_song.mp3";
-                            AVChatManager.getInstance().startAudioMixing(songPath, true, false, 100, musicSongVolumeControl.getProgress() * 1.0f / 100);
-                        }
-                    }
-                    break;
-            }
-        }
-    };
-
-    private void resetMusicLayoutViews(boolean resetFirstSong, boolean resetSecondSong) {
-        if (resetFirstSong) {
-            musicSongFirstControl.setImageResource(R.drawable.background_music_control_play);
-            musicSongFirstContent.setText(R.string.background_music_song_first_play);
-            isMusicFirstPlaying = false;
-            isMusicFirstPause = false;
-        }
-        if (resetSecondSong) {
-            musicSongSecondControl.setImageResource(R.drawable.background_music_control_play);
-            musicSongSecondContent.setText(R.string.background_music_song_second_play);
-            isMusicSecondPlaying = false;
-            isMusicSecondPause = false;
-        }
-    }
+//    private View.OnClickListener musicListener = new View.OnClickListener() {
+//        @Override
+//        public void onClick(View v) {
+//            String rootPath = Environment.getExternalStorageDirectory().getAbsolutePath() + "/" + getPackageName();
+//            switch (v.getId()) {
+//                case R.id.music_song_first_control:
+//                    if (isMusicFirstPlaying) {
+//                        AVChatManager.getInstance().pauseAudioMixing();
+//                        musicSongFirstControl.setImageResource(R.drawable.background_music_control_play);
+//                        musicSongFirstContent.setText(R.string.background_music_song_first_play);
+//                        isMusicFirstPlaying = false;
+//                        isMusicFirstPause = true;
+//                    } else {
+//                        if (isMusicSecondPlaying) {
+//                            resetMusicLayoutViews(false, true);
+//                        }
+//
+//                        isMusicFirstPlaying = true;
+//                        musicSongFirstControl.setImageResource(R.drawable.background_music_control_pause);
+//                        musicSongFirstContent.setText(R.string.background_music_song_first_pause);
+//                        if (isMusicFirstPause) {
+//                            AVChatManager.getInstance().resumeAudioMixing();
+//                        } else {
+//                            String songPath = rootPath + "/music/first_song.mp3";
+//
+//                            AVChatManager.getInstance().startAudioMixing(songPath, true, false, 100, musicSongVolumeControl.getProgress() * 1.0f / 100);
+//                        }
+//                    }
+//
+//                    break;
+//                case R.id.music_song_second_control:
+//                    if (isMusicSecondPlaying) {
+//                        AVChatManager.getInstance().pauseAudioMixing();
+//                        musicSongSecondControl.setImageResource(R.drawable.background_music_control_play);
+//                        musicSongSecondContent.setText(R.string.background_music_song_second_play);
+//                        isMusicSecondPlaying = false;
+//                        isMusicSecondPause = true;
+//                    } else {
+//                        if (isMusicFirstPlaying) {
+//                            resetMusicLayoutViews(true, false);
+//                        }
+//
+//                        isMusicSecondPlaying = true;
+//                        musicSongSecondControl.setImageResource(R.drawable.background_music_control_pause);
+//                        musicSongSecondContent.setText(R.string.background_music_song_second_pause);
+//                        if (isMusicSecondPause) {
+//                            AVChatManager.getInstance().resumeAudioMixing();
+//                        } else {
+//                            String songPath = rootPath + "/music/second_song.mp3";
+//                            AVChatManager.getInstance().startAudioMixing(songPath, true, false, 100, musicSongVolumeControl.getProgress() * 1.0f / 100);
+//                        }
+//                    }
+//                    break;
+//            }
+//        }
+//    };
+//
+//    private void resetMusicLayoutViews(boolean resetFirstSong, boolean resetSecondSong) {
+//        if (resetFirstSong) {
+//            musicSongFirstControl.setImageResource(R.drawable.background_music_control_play);
+//            musicSongFirstContent.setText(R.string.background_music_song_first_play);
+//            isMusicFirstPlaying = false;
+//            isMusicFirstPause = false;
+//        }
+//        if (resetSecondSong) {
+//            musicSongSecondControl.setImageResource(R.drawable.background_music_control_play);
+//            musicSongSecondContent.setText(R.string.background_music_song_second_play);
+//            isMusicSecondPlaying = false;
+//            isMusicSecondPause = false;
+//        }
+//    }
 
 
     private void findInteractionMemberLayout() {
@@ -588,34 +579,34 @@ public class LiveActivity extends LivePlayerBaseActivity implements InteractionA
             }
         });
     }
-
-    // 取出缓存的礼物
-    private void loadGift() {
-        Map gifts = GiftCache.getInstance().getGift(roomId);
-        if (gifts == null) {
-            return;
-        }
-        Iterator<Map.Entry<Integer, Integer>> it = gifts.entrySet().iterator();
-        while (it.hasNext()) {
-            Map.Entry<Integer, Integer> entry = it.next();
-            int type = entry.getKey();
-            int count = entry.getValue();
-            giftList.add(new Gift(GiftType.typeOfValue(type), GiftConstant.titles[type], count, GiftConstant.images[type]));
-        }
-    }
+//
+//    // 取出缓存的礼物
+//    private void loadGift() {
+//        Map gifts = GiftCache.getInstance().getGift(roomId);
+//        if (gifts == null) {
+//            return;
+//        }
+//        Iterator<Map.Entry<Integer, Integer>> it = gifts.entrySet().iterator();
+//        while (it.hasNext()) {
+//            Map.Entry<Integer, Integer> entry = it.next();
+//            int type = entry.getKey();
+//            int count = entry.getValue();
+//            giftList.add(new Gift(GiftType.typeOfValue(type), GiftConstant.titles[type], count, GiftConstant.images[type]));
+//        }
+//    }
 
     private void setListener() {
         startBtn.setOnClickListener(buttonClickListener);
         backBtn.setOnClickListener(buttonClickListener);
-        switchBtn.setOnClickListener(buttonClickListener);
+//        switchBtn.setOnClickListener(buttonClickListener);
         beautyBtn.setOnClickListener(buttonClickListener);
         interactionBtn.setOnClickListener(buttonClickListener);
         interactionLayout.setOnClickListener(buttonClickListener);
 //        giftBtn.setOnClickListener(buttonClickListener);
 //        giftLayout.setOnClickListener(buttonClickListener);
-        musicBtn.setOnClickListener(buttonClickListener);
-        musicBlankView.setOnClickListener(buttonClickListener);
-        musicContentView.setOnClickListener(buttonClickListener);
+//        musicBtn.setOnClickListener(buttonClickListener);
+//        musicBlankView.setOnClickListener(buttonClickListener);
+//        musicContentView.setOnClickListener(buttonClickListener);
         hdSelectedText.setOnClickListener(buttonClickListener);
         hdFirstText.setOnClickListener(buttonClickListener);
         hdSecondText.setOnClickListener(buttonClickListener);
@@ -646,9 +637,9 @@ public class LiveActivity extends LivePlayerBaseActivity implements InteractionA
                         clearChatRoom();
                     }
                     break;
-                case R.id.switch_btn:
-                    AVChatManager.getInstance().switchCamera();
-                    break;
+//                case R.id.switch_btn:
+//                    AVChatManager.getInstance().switchCamera();
+//                    break;
                 case R.id.beauty_btn:
                     openCloseBeauty();
                     break;
@@ -680,12 +671,12 @@ public class LiveActivity extends LivePlayerBaseActivity implements InteractionA
                     hdSelectedText.setVisibility(View.VISIBLE);
                     setVideoQuality(AVChatVideoQuality.QUALITY_480P);
                     break;
-                case R.id.music_btn:
-                    showMusicLayout();
-                    break;
-                case R.id.background_music_blank_view:
-                    backgroundMusicLayout.setVisibility(View.GONE);
-                    break;
+//                case R.id.music_btn:
+//                    showMusicLayout();
+//                    break;
+//                case R.id.background_music_blank_view:
+//                    backgroundMusicLayout.setVisibility(View.GONE);
+//                    break;
             }
         }
     };
@@ -709,29 +700,29 @@ public class LiveActivity extends LivePlayerBaseActivity implements InteractionA
 //            noGiftText.setVisibility(View.GONE);
 //        }
 //    }
+//
+//    protected void updateGiftList(GiftType type) {
+//        if (!updateGiftCount(type)) {
+//            giftList.add(new Gift(type, GiftConstant.titles[type.getValue()], 1, GiftConstant.images[type.getValue()]));
+//        }
+//        GiftCache.getInstance().saveGift(roomId, type.getValue());
+//    }
+//
+//    // 更新收到礼物的数量
+//    private boolean updateGiftCount(GiftType type) {
+//        for (Gift gift : giftList) {
+//            if (type == gift.getGiftType()) {
+//                gift.setCount(gift.getCount() + 1);
+//                return true;
+//            }
+//        }
+//        return false;
+//    }
 
-    protected void updateGiftList(GiftType type) {
-        if (!updateGiftCount(type)) {
-            giftList.add(new Gift(type, GiftConstant.titles[type.getValue()], 1, GiftConstant.images[type.getValue()]));
-        }
-        GiftCache.getInstance().saveGift(roomId, type.getValue());
-    }
-
-    // 更新收到礼物的数量
-    private boolean updateGiftCount(GiftType type) {
-        for (Gift gift : giftList) {
-            if (type == gift.getGiftType()) {
-                gift.setCount(gift.getCount() + 1);
-                return true;
-            }
-        }
-        return false;
-    }
-
-    private void showMusicLayout() {
-//        inputPanel.collapse(true);
-        backgroundMusicLayout.setVisibility(View.VISIBLE);
-    }
+//    private void showMusicLayout() {
+////        inputPanel.collapse(true);
+//        backgroundMusicLayout.setVisibility(View.VISIBLE);
+//    }
 
     /**
      * ********************************** 断网重连处理 **********************************
@@ -1296,9 +1287,9 @@ public class LiveActivity extends LivePlayerBaseActivity implements InteractionA
     @Override
     public void onAudioMixingEvent(int i) {
         switch (i) {
-            case AVChatAudioMixingEvent.MIXING_FINISHED:
-                resetMusicLayoutViews(true, true);
-                break;
+//            case AVChatAudioMixingEvent.MIXING_FINISHED:
+//                resetMusicLayoutViews(true, true);
+//                break;
             case AVChatAudioMixingEvent.MIXING_ERROR:
 
                 break;

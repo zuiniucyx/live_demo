@@ -2,11 +2,11 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/interaction_view_layout"
-    android:layout_width="110dp"
-    android:layout_height="160dp"
+    android:layout_width="240dp"
+    android:layout_height="320dp"
     android:layout_alignParentBottom="true"
     android:layout_alignParentRight="true"
-    android:layout_marginBottom="100dp"
+    android:layout_marginBottom="50dp"
     android:layout_marginRight="10dp"
     android:background="@color/white"
     android:visibility="gone"
@@ -15,8 +15,8 @@
     <!-- 连麦者音频画面 -->
     <RelativeLayout
         android:id="@+id/audio_mode_audience_layout"
-        android:layout_width="120dp"
-        android:layout_height="160dp"
+        android:layout_width="240dp"
+        android:layout_height="320dp"
         android:background="@drawable/audio_mode_audience_bg"
         android:visibility="gone">
 
@@ -31,8 +31,8 @@
     <!-- 观众视频画面 -->
     <RelativeLayout
         android:id="@+id/audience_living_layout"
-        android:layout_width="120dp"
-        android:layout_height="160dp"
+        android:layout_width="240dp"
+        android:layout_height="320dp"
         android:visibility="gone">
 
         <com.netease.nimlib.sdk.avchat.model.AVChatVideoRender
@@ -53,7 +53,7 @@
     <!-- 正在连接中/视频已结束画面 -->
     <RelativeLayout
         android:id="@+id/audience_loading_layout"
-        android:layout_width="120dp"
+        android:layout_width="240dp"
         android:layout_height="match_parent"
         android:background="@color/color_black_bf000000"
         android:visibility="gone">

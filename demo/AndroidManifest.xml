@@ -64,10 +64,9 @@
         <!-- IM -->
         <activity
             android:name=".im.activity.WelcomeActivity"
-            android:configChanges="keyboardHidden|orientation"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:hardwareAccelerated="true"
             android:launchMode="singleTop"
-            android:screenOrientation="landscape"
             android:theme="@style/WelcomeEntranceActionBarTheme"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -79,7 +78,7 @@
 
         <activity
             android:name=".im.activity.LoginActivity"
-            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/LoginTheme"
             android:windowSoftInputMode="adjustPan|stateHidden" />
 
@@ -88,44 +87,44 @@
         <activity
             android:name=".entertainment.activity.MainActivity"
             android:label="@string/my_classes"
-            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
             android:name=".entertainment.activity.IdentifyActivity"
-            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
             android:name=".entertainment.activity.LiveModeChooseActivity"
-            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
             android:name=".entertainment.activity.AboutActivity"
-            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
             android:name=".entertainment.activity.AudienceActivity"
-            android:screenOrientation="landscape"
             android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:windowSoftInputMode="stateHidden|adjustNothing" />
 
         <activity
             android:name=".entertainment.activity.LiveActivity"
-            android:screenOrientation="landscape"
             android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:windowSoftInputMode="stateHidden|adjustNothing" />
 
         <activity
             android:name=".entertainment.activity.EnterRoomActivity"
-            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
 
         <activity android:name=".entertainment.activity.InputActivity"
-                  android:screenOrientation="landscape"
+                  android:configChanges="orientation|keyboardHidden|screenSize"
                   android:theme="@style/InputActivityTheme"
             android:windowSoftInputMode="stateUnspecified|adjustResize" />
 

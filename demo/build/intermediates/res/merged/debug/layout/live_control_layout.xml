@@ -4,20 +4,19 @@
     android:id="@+id/control_layout"
     android:layout_width="wrap_content"
     android:layout_height="100dp"
-    android:layout_above="@id/messageActivityBottomLayout"
     android:layout_marginBottom="10dp"
-    android:layout_marginRight="6dp"
+    android:layout_alignParentBottom="true"
     tools:showIn="@layout/live_player_activity">
 
-    <ImageButton
-        android:id="@+id/switch_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:background="@drawable/switch_camera_selector" />
+    <!--<ImageButton-->
+        <!--android:id="@+id/switch_btn"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:background="@drawable/switch_camera_selector" />-->
 
     <include
         android:id="@+id/hd_btn"
@@ -34,16 +33,16 @@
         android:layout_toRightOf="@id/hd_btn"
         android:background="@drawable/ic_beauty_open_selector" />
 
-    <ImageButton
-        android:id="@+id/music_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_toRightOf="@id/beauty_btn"
-        android:background="@drawable/background_music_selector"
-        android:gravity="center" />
+    <!--<ImageButton-->
+        <!--android:id="@+id/music_btn"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:layout_toRightOf="@id/beauty_btn"-->
+        <!--android:background="@drawable/background_music_selector"-->
+        <!--android:gravity="center" />-->
 
     <TextView
         android:id="@+id/interaction_btn"
@@ -51,17 +50,16 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_toRightOf="@id/music_btn"
+        android:layout_toRightOf="@id/beauty_btn"
         android:background="@drawable/ic_interaction_normal"
         android:gravity="center" />
 
-    <ImageButton
-        android:id="@+id/gift_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="10dp"
-        android:layout_toRightOf="@id/interaction_btn"
-        android:background="@drawable/gift_icon_selector" />
+    <!--<ImageButton-->
+        <!--android:id="@+id/gift_btn"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:layout_toRightOf="@id/interaction_btn"-->
+        <!--android:background="@drawable/gift_icon_selector" />-->
 </RelativeLayout>

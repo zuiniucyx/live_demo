@@ -20,18 +20,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="100dp"
         android:text="@string/room_id_tip"
         android:textColor="@color/color_gray_666666"
-        android:textSize="15sp" />
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal" />
 
     <com.netease.nim.chatroom.demo.im.ui.widget.ClearableEditTextWithIcon
         android:id="@+id/room_id_edit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="400dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/nim_blue_edit_text_bg"
         android:inputType="text"
         android:padding="5dp"
@@ -42,8 +44,9 @@
 
     <Button
         android:id="@+id/join_btn"
-        android:layout_width="match_parent"
+        android:layout_width="400dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="25dp"
@@ -51,5 +54,5 @@
         android:minHeight="50dp"
         android:text="@string/join"
         android:textColor="@color/white"
-        android:textSize="@dimen/text_size_17" />
+        android:textSize="@dimen/text_size_18" />
 </LinearLayout>
