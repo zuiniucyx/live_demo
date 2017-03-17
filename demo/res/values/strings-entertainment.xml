@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">联云互动</string>
+    <string name="app_name">惠健康互动</string>
     <string name="my_classes">我的直播课程</string>
     <string name="identity_tips">请选择你的身份，开始体验</string>
     <string name="master_client">主播端</string>

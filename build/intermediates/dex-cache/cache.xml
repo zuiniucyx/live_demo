@@ -12,21 +12,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/10/classes_eef6079953ab716e68e1db0a6832a7b584e5fd39/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/cyx/Desktop/nim_entertainment_demo/demo/libs/butterknife-7.0.1.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
         <dex dex="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/2/butterknife-7.0.1_0063cef4615def3660d6030ea7c17f6563115466/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/10/classes_eef6079953ab716e68e1db0a6832a7b584e5fd39/classes.dex" />
     </item>
     <item
         is-multidex="true"

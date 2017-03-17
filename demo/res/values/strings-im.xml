@@ -16,7 +16,7 @@
     <string name="setting">设置</string>
     <string name="kickout_notify">下线通知</string>
     <string name="kickout_content">你的帐号被踢出下线，请确定帐号信息安全</string>
-    <string name="copyright">Copyright ©1997-2017 网易公司版权所有</string>
+    <string name="copyright">Copyright ©1997-2017 惠健康版权所有</string>
     <string name="nim_status_unlogin">未登录</string>
     <string name="server_broken">与服务器连接断开</string>
     <string name="net_broken">当前网络不可用</string>

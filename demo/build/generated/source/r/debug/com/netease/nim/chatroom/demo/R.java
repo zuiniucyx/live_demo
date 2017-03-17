@@ -3858,8 +3858,6 @@ containing a value of this type.
         public static final int dialog_default_style=0x7f08015c;
         public static final int dialog_message_text_style=0x7f08015d;
         public static final int dialog_title_text_style=0x7f08015e;
-        /**  后面的activity变暗 
-         */
         public static final int easy_dialog_style=0x7f08015f;
         public static final int horizontal_light_thin_divider=0x7f080160;
         public static final int list_view=0x7f080161;
