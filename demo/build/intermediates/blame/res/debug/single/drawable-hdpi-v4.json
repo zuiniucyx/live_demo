@@ -1,23 +1,23 @@
 [
     {
-        "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_000.png",
-        "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
-    },
-    {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ic_clear_mtrl_alpha.png",
         "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/drawable-hdpi-v4/abc_ic_clear_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_000.png",
+        "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png",
         "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
-        "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png",
-        "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/drawable-hdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
-    },
-    {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_list_selector_disabled_holo_light.9.png",
         "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/drawable-hdpi-v4/abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png",
+        "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/drawable-hdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ic_star_black_36dp.png",

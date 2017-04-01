@@ -8,12 +8,12 @@
         "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/drawable/identity_color_selector.xml"
     },
     {
-        "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable/nim_message_item_round_bg.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/drawable/nim_message_item_round_bg.xml"
-    },
-    {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable/nim_message_button_bottom_send_selector.xml",
         "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/drawable/nim_message_button_bottom_send_selector.xml"
+    },
+    {
+        "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable/nim_message_item_round_bg.xml",
+        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/drawable/nim_message_item_round_bg.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable/background_music_selector.xml",
@@ -56,16 +56,16 @@
         "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/drawable/actionbar_blue_bg_pressed.xml"
     },
     {
-        "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_dark.xml",
-        "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/drawable/abc_dialog_material_background_dark.xml"
+        "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable/actionbar_logo_white.xml",
+        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/drawable/actionbar_logo_white.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable/nim_message_button_bottom_add_selector.xml",
         "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/drawable/nim_message_button_bottom_add_selector.xml"
     },
     {
-        "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable/actionbar_logo_white.xml",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/drawable/actionbar_logo_white.xml"
+        "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_dark.xml",
+        "source": "/Users/cyx/.android/build-cache/cef4550043d7cb16558b52c023f7a46da71c7a45/output/res/drawable/abc_dialog_material_background_dark.xml"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable/abc_btn_colored_material.xml",

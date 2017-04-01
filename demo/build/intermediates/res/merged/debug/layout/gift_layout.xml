@@ -51,7 +51,7 @@
             android:textSize="12sp" />
     </RelativeLayout>
 
-    <com.netease.nim.chatroom.demo.im.ui.widget.CircleImageView
+    <com.netease.nim.chatroom.zyly.im.ui.widget.CircleImageView
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:layout_centerVertical="true"

@@ -36,6 +36,7 @@
     <string name="registering">注册中\u2026</string>
     <string name="register_success">注册成功</string>
     <string name="register_failed">注册失败,错误码%1$d:%2$s</string>
+    <string name="network_error">网络错误</string>
     <string name="register_account_tip">帐号限20位字母或者数字</string>
     <string name="register_nick_name_tip">昵称限10位汉字、字母或者数字</string>
     <string name="register_password_tip">密码必须为6~20位字母或者数字</string>

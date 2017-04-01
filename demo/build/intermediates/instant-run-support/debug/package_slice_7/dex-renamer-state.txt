@@ -1,4 +1,4 @@
-#Sat Mar 11 10:51:49 CST 2017
+#Wed Mar 29 15:37:51 CST 2017
 base.0=/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7
 renamed.0=classes.dex
 file.0=/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex

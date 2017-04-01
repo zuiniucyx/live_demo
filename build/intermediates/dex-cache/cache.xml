@@ -52,7 +52,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="709afd4784f2e0bb1d11b633126e879bd7abab09">
+        sha1="f5f577b58652be2bfc9c8b1fe908afddbc7a1968">
         <dex dex="/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_652234da37944a114610a1304ec37291b7d0764b/classes.dex" />
     </item>
     <item

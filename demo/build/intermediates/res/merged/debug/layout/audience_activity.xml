@@ -11,7 +11,7 @@
         android:gravity="center"
         android:background="@color/black">
 
-        <com.netease.nim.chatroom.demo.thirdparty.video.NEVideoView
+        <com.netease.nim.chatroom.zyly.thirdparty.video.NEVideoView
             android:id="@+id/video_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -154,7 +154,7 @@
                 <!--android:visibility="gone" />-->
         <!--</LinearLayout>-->
 
-        <com.netease.nim.chatroom.demo.entertainment.ui.MessageListViewEx
+        <com.netease.nim.chatroom.zyly.entertainment.ui.MessageListViewEx
             android:id="@+id/messageListView"
             style="@style/list_view"
             android:layout_width="200dp"
@@ -184,7 +184,7 @@
             android:layout_above="@id/gift_animation_view"
             android:layout_marginBottom="3dp" />
 
-        <com.netease.nim.chatroom.demo.im.ui.periscope.PeriscopeLayout
+        <com.netease.nim.chatroom.zyly.im.ui.periscope.PeriscopeLayout
             android:id="@+id/periscope"
             android:layout_width="70dp"
             android:layout_height="350dp"

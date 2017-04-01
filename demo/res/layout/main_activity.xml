@@ -17,7 +17,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <com.netease.nim.chatroom.demo.im.ui.periscope.PeriscopeLayout
+    <com.netease.nim.chatroom.zyly.im.ui.periscope.PeriscopeLayout
         android:id="@+id/periscope"
         android:layout_width="150dp"
         android:layout_height="300dp" />

@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable-hdpi/nim_blue_btn.9.png",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/drawable-hdpi/nim_blue_btn.9.png"
-    },
-    {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable-hdpi/ic_beauty_open_pressed.png",
         "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/drawable-hdpi/ic_beauty_open_pressed.png"
+    },
+    {
+        "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable-hdpi/nim_blue_btn.9.png",
+        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/drawable-hdpi/nim_blue_btn.9.png"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable-hdpi/nim_emoji_icon.png",
@@ -20,12 +20,12 @@
         "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/drawable-hdpi/ic_beauty_close_normal.png"
     },
     {
-        "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable-hdpi/nim_default_img_failed.png",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/drawable-hdpi/nim_default_img_failed.png"
-    },
-    {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable-hdpi/ic_beauty_open_normal.png",
         "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/drawable-hdpi/ic_beauty_open_normal.png"
+    },
+    {
+        "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable-hdpi/nim_default_img_failed.png",
+        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/drawable-hdpi/nim_default_img_failed.png"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable-hdpi/progressbar_background.9.png",
@@ -36,12 +36,12 @@
         "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/drawable-hdpi/nim_loading_small_white.png"
     },
     {
-        "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable-hdpi/nim_message_input_edittext_box_pressed.9.png",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/drawable-hdpi/nim_message_input_edittext_box_pressed.9.png"
-    },
-    {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable-hdpi/progressbar_buffered.9.png",
         "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/drawable-hdpi/progressbar_buffered.9.png"
+    },
+    {
+        "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable-hdpi/nim_message_input_edittext_box_pressed.9.png",
+        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/drawable-hdpi/nim_message_input_edittext_box_pressed.9.png"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable-hdpi/ic_interaction_numbers.png",
@@ -72,12 +72,12 @@
         "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/drawable-hdpi/nim_blue_btn_pressed.9.png"
     },
     {
-        "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable-hdpi/ic_audio_mode_pressed.png",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/drawable-hdpi/ic_audio_mode_pressed.png"
-    },
-    {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable-hdpi/nemediacontroller_play.png",
         "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/drawable-hdpi/nemediacontroller_play.png"
+    },
+    {
+        "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable-hdpi/ic_audio_mode_pressed.png",
+        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/drawable-hdpi/ic_audio_mode_pressed.png"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable-hdpi/icon_net_detect_info.png",
@@ -108,12 +108,12 @@
         "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/drawable-hdpi/nemediacontroller_bg.png"
     },
     {
-        "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable-hdpi/icon_net_detect_wifi_enable_4.png",
-        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/drawable-hdpi/icon_net_detect_wifi_enable_4.png"
-    },
-    {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable-hdpi/pause.png",
         "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/drawable-hdpi/pause.png"
+    },
+    {
+        "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable-hdpi/icon_net_detect_wifi_enable_4.png",
+        "source": "/Users/cyx/Desktop/nim_entertainment_demo/demo/res/drawable-hdpi/icon_net_detect_wifi_enable_4.png"
     },
     {
         "merged": "/Users/cyx/Desktop/nim_entertainment_demo/demo/build/intermediates/res/merged/debug/drawable-hdpi/play.png",

@@ -62,7 +62,7 @@
         android:layout_marginBottom="10dp"
         android:orientation="vertical">
 
-        <com.netease.nim.chatroom.demo.entertainment.ui.MessageListViewEx
+        <com.netease.nim.chatroom.zyly.entertainment.ui.MessageListViewEx
             android:id="@+id/messageListView"
             style="@style/list_view"
             android:layout_width="200dp"
@@ -109,7 +109,7 @@
 
     <include layout="@layout/live_control_layout" />
 
-    <com.netease.nim.chatroom.demo.im.ui.periscope.PeriscopeLayout
+    <com.netease.nim.chatroom.zyly.im.ui.periscope.PeriscopeLayout
         android:id="@+id/periscope"
         android:layout_width="70dp"
         android:layout_height="350dp"

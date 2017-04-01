@@ -32,7 +32,7 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <com.netease.nim.chatroom.demo.im.ui.widget.ClearableEditTextWithIcon
+                <com.netease.nim.chatroom.zyly.im.ui.widget.ClearableEditTextWithIcon
                     android:id="@+id/edit_login_account"
                     android:layout_width="400dp"
                     android:layout_height="wrap_content"
@@ -47,7 +47,7 @@
                     android:textSize="18sp"
                     android:layout_gravity="center_horizontal"/>
 
-                <com.netease.nim.chatroom.demo.im.ui.widget.ClearableEditTextWithIcon
+                <com.netease.nim.chatroom.zyly.im.ui.widget.ClearableEditTextWithIcon
                     android:id="@+id/edit_login_password"
                     android:layout_width="400dp"
                     android:layout_height="wrap_content"
@@ -84,7 +84,7 @@
                 android:orientation="vertical"
                 android:visibility="gone">
 
-                <com.netease.nim.chatroom.demo.im.ui.widget.ClearableEditTextWithIcon
+                <com.netease.nim.chatroom.zyly.im.ui.widget.ClearableEditTextWithIcon
                     android:id="@+id/edit_register_account"
                     android:layout_width="400dp"
                     android:layout_height="wrap_content"
@@ -101,23 +101,23 @@
                     android:textCursorDrawable="@null"
                     android:textSize="18sp" />
 
-                <com.netease.nim.chatroom.demo.im.ui.widget.ClearableEditTextWithIcon
-                    android:id="@+id/edit_register_nickname"
-                    android:layout_width="400dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:background="@drawable/edittext_white_normal"
-                    android:drawablePadding="15dp"
-                    android:hint="@string/input_nickname"
-                    android:inputType="text"
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
-                    android:textColor="@color/white"
-                    android:textColorHint="@color/color_white_66ffffff"
-                    android:textCursorDrawable="@null"
-                    android:textSize="18sp" />
+                <!--<com.netease.nim.chatroom.zyly.im.ui.widget.ClearableEditTextWithIcon-->
+                    <!--android:id="@+id/edit_register_nickname"-->
+                    <!--android:layout_width="400dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:background="@drawable/edittext_white_normal"-->
+                    <!--android:drawablePadding="15dp"-->
+                    <!--android:hint="@string/input_nickname"-->
+                    <!--android:inputType="text"-->
+                    <!--android:paddingLeft="15dp"-->
+                    <!--android:paddingRight="15dp"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textColorHint="@color/color_white_66ffffff"-->
+                    <!--android:textCursorDrawable="@null"-->
+                    <!--android:textSize="18sp" />-->
 
-                <com.netease.nim.chatroom.demo.im.ui.widget.ClearableEditTextWithIcon
+                <com.netease.nim.chatroom.zyly.im.ui.widget.ClearableEditTextWithIcon
                     android:id="@+id/edit_register_password"
                     android:layout_width="400dp"
                     android:layout_height="wrap_content"

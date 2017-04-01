@@ -35,7 +35,7 @@
                 android:text="背景乐"
                 android:textSize="17dp" />
 
-            <com.netease.nim.chatroom.demo.im.ui.widget.SwitchButton
+            <com.netease.nim.chatroom.zyly.im.ui.widget.SwitchButton
                 android:id="@+id/music_switch_button"
                 android:layout_width="58dip"
                 android:layout_height="36.67dip"

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.netease.nim.chatroom.demo"
+    package="com.netease.nim.chatroom.zyly"
     android:versionCode="1"
     android:versionName="1.5.0">
 
@@ -55,7 +55,10 @@
 
         <meta-data
             android:name="com.netease.nim.appKey"
-			android:value="6f49e3f759ccd47810b445444eebc090" />
+        android:value="87455c01f7297c086df24b7d8a5399ad" />
+
+        <!--android:value="6f49e3f759ccd47810b445444eebc090" />-->
+
 
         <uses-library
             android:name="com.google.android.maps"

@@ -47,33 +47,33 @@
     </RelativeLayout>
 
     <!-- 音频模式的连线显示 -->
-    <RelativeLayout
-        android:id="@+id/audio_mode_init_layout"
-        android:layout_width="match_parent"
-        android:layout_height="158dp"
-        android:layout_alignParentBottom="true"
-        android:background="@color/white">
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/audio_mode_init_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="158dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="@color/white">-->
 
-        <TextView
-            android:id="@+id/audio_mode_interaction_tip"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
-            android:text="@string/i_want_to"
-            android:textColor="@color/color_black_333333"
-            android:textSize="17sp" />
+        <!--<TextView-->
+            <!--android:id="@+id/audio_mode_interaction_tip"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:text="@string/i_want_to"-->
+            <!--android:textColor="@color/color_black_333333"-->
+            <!--android:textSize="17sp" />-->
 
-        <Button
-            android:id="@+id/audio_mode_link"
-            android:layout_width="190dp"
-            android:layout_height="40dp"
-            android:layout_below="@id/audio_mode_interaction_tip"
-            android:background="@drawable/nim_blue_btn"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="35dp"
-            android:text="@string/audio_link" />
-    </RelativeLayout>
+        <!--<Button-->
+            <!--android:id="@+id/audio_mode_link"-->
+            <!--android:layout_width="190dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_below="@id/audio_mode_interaction_tip"-->
+            <!--android:background="@drawable/nim_blue_btn"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="35dp"-->
+            <!--android:text="@string/audio_link" />-->
+    <!--</RelativeLayout>-->
 
     <!-- 已经申请连线的布局显示 -->
     <RelativeLayout
